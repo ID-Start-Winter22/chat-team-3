@@ -1,0 +1,296 @@
+version: "3.0"
+
+intents:
+  - greet
+  - greet_formal
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - my_name_is
+  - bot_challenge_name
+  - ask_travel_time
+  - ask_exercise_nacken
+  - ask_exercise_schultern
+  - ask_exercise_trizeps
+  - ask_exercise_bauch
+  - ask_exercise_po
+  - ask_exercise_beine
+  - ask_exercise_bizeps
+  - ask_exercise_brust
+  - ask_exercise_rücken
+  - ask_exercise_waden
+  - ask_exercise_arme
+  - ask_exercise_handgelenke
+  - want_to_train
+  - lazy_today
+  - had_training
+  - need_help
+
+actions:
+  - action_store_name
+  - action_get_name
+  - action_get_travel_time
+  - action_send_youtube_video
+
+entities:
+  - username
+  - from_station
+  - to_station
+
+slots:
+  username:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: username
+  from_station:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: from_station
+  to_station:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: to_station
+
+responses:
+
+  utter_what_exactly_train:
+  - text: "Was genau willst du denn heute trainieren?"
+  - text: "Welche Muskelgruppe ist heute an der Reihe?"
+  - text: "Welche Muskeln möchtest du heute verstärken?"
+  - text: "Was trainierst du heute?"
+  - text: "Auf welches Training hast du heute Lust?"
+  - text: "Was wollen wir heute definieren?"
+  - text: "Mit welcher Muskelgruppe soll ich dir heute helfen?"
+  - text: "An welcher Muskelgruppe willst du heute arbeiten?"
+
+  utter_ask_want_to_train:
+  - text: "Hast du heute Lust auf ein Training?"
+  - text: "Heute ist ein perfekter Tag für ein Training. Hast du Bock?"
+  - text: "Magst du heute noch stärker werden?" 
+  - text: "Hast du Lust, an deinem Körper zu arbeiten?"
+  - text: "Willst du deinen Körper weiter in die beste Form bringen?"
+  - text: "Willst du weiter deine Disziplin stärken und heute trainieren?"
+
+
+  utter_ask_need_help:
+  - text: "Kann ich dir helfen?"
+  - text: "Darf ich einen Tipp geben?"
+  - text: "Willst du einen Vorschlag von mir haben?"
+  - text: "Brauchst du meine Hilfe bei der Suche nach ein paar effektiven Übungen?"
+  - text: "Soll ich dir helfen?"
+  - text: "Willst du, dass ich dir helfe, gute Übungen zu finden?"
+  - text: "Wollen wir zusammenarbeiten?"
+
+
+  utter_praise:
+  - text: "Duu fleißig! 😎"
+  - text: "Ich bin stolt auf dich!💪🏻"
+  - text: "Wow! Bald wirst du ein Profi! 🤩👏🏻"
+  - text: "Du wirst jeden Tag stärker!"
+  - text: "Stabil! Weiter so! 🔥👊🏻"
+  - text: "Das kann dir keiner mehr nehmen!"
+  - text: "Zieh durch, du machst das super!"
+  - text: "Jeden Tag, wo du trainierst, machst du einen Schritt in die richtige Richtung!"
+
+
+  utter_exercise_nacken:
+  - text: "Hier sind ein paar Übungen für dich. Viel Spaß im Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/ii8WjM8Va70" } }
+  - text: "Hier sind die besten Übungen für Nacken. Viel Kraft im Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/ea86IuyeiNM" } }
+  - text: "Hier findest Du gute Übungen für Nacken. Genieß das Training  🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/xWJJElttl4E" } }
+
+  utter_exercise_schultern:
+  - text: "Hier sind ein paar Übungen für dich. Viel Kraft im Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/7_0suCmMbfg" } }
+  - text: "Hier sind die besten Übungen für Schultern. Viel Spaß im Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/qQduXPnxcBA" } }
+  - text: "Hier findest Du gute Übungen für Schultern. Genieß das Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/OMpGZclL24M" } }
+
+  utter_exercise_trizeps:
+  - text: "Hier sind ein paar Übungen für dich. Genieß das Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/BiKj6GSDxAs" } }
+  - text: "Hier sind die besten Übungen für Trizeps. Viel Kraft im Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/NmUMcKKuZSE" } }
+  - text: "Hier findest Du gute Übungen für Trizeps. Viel Spaß im Training 🔥💪🏻"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/elXOc-4yvNI" } }
+
+  utter_exercise_bauch:
+  - text: "Hier ein Workout für deinen Bauch. Die 10 Minuten schaffst du!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/ouFOaLWmerk" } }
+  - text: "Your only limit is your mind, los geht's!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/84EkBBwJc3A" } }
+  - text: "Hier ist ein Video für deinen Bauch. Nur 10 Minuten!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/LbyGA5XrkF4" } }
+
+  utter_exercise_beine:
+  - text: "Hier einige Übungen für deine Beine. Wenn Du alles gibst, kannst Du Dir nichts vorwerfen!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/b9DFYywGneA" } }
+  - text: "10 Minuten. Volle Power. Die Zeit hast du!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/bcH-qcnpy20" } }
+  - text: "Mit dem Video kannst du deine Beine und Waden trainieren. Viel Spaß!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/_wt_N-FXcZ0" } }
+
+  utter_exercise_po:
+  - text: "Hier ein Video. Aufgeben ist keine Option!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/bggX6ocjojk" } }
+  - text: "Viel Spaß mit den Übungen!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/tn57ZkO8lnE" } }
+  - text: "Das Video bringt deinen booty richtig in Form. Genieß es!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/VN8lB8ehpkk" } }
+
+  utter_exercise_bizeps:
+  - text: "Hier findest du ein Workout für deinen Bizeps. No pain, no gain!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/-pT0t2ScJ00" } }
+  - text: "Mit diesen Übungen kriegst du den 44er Bizeps!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/Ja5qlQH3Plg" } }
+  - text: "Einen großen Bizeps kannst du auch ohne Geräte bekommen! No excuses!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/sMW2HRaCz3A" } }
+
+  utter_exercise_brust:
+  - text: "Zeit, aktiv zu werden! Hier ein tolles Workout für deine Brust:"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/mLhtgu_CQDY" } }
+  - text: "Die besten Übungen für deine Brust findest du hier. Viel Spaß!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/MwprhUnF4PA" } }
+  - text: "Keine Geräte? Kein Problem! Diese Übungen für deine Brust sind komplett ohne Geräte!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/VEkA5wDsPUk" } }
+
+  utter_exercise_rücken:
+  - text: "Wenn du einen breiten Rücken haben willst, kommst du an diesem Workout nicht vorbei!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/f1dtA3saKk0" } }
+  - text: "Fit zu sein ist kein Ziel, es ist eine Lebenshaltung. Hier ein tolles Rücken-Workout für dich!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/wNXBsazLt9Y" } }
+  - text: "Keine Lust ins Gym zu gehen? Diese Rückenübungen kannst du auch von Zuhause machen! Viel Spaß!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/8CdTc8nXzrA" } }
+
+  utter_exercise_arme:
+  - text: "Hier ein Workout für deine Arme. Die 10 Minuten schaffst du!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/ZNQC_Dzr10U" } }
+  - text: "Your only limit is your mind, los geht's!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/JfFV-mll0xU" } }
+  - text: "Hier ist ein Video für deine Arme. Nur 5 Minuten!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/Z2DrCQOalBs" } }
+
+  utter_exercise_waden:
+  - text: "Hier einige Übungen für deine Waden. Du schaffst das!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/xZvbvB5MPWA" } }
+  - text: "5 Minuten. Volle Power. Die Zeit hast du!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/Ox4N6MkvLV8" } }
+  - text: "Diese Übung ist perfekt für schlanke Waden. Viel Spaß!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/fx3eTJ_D95M" } }
+
+  utter_exercise_handgelenke:
+  - text: "Starke Handgelenke sind wichtig! Viel Spaß mit der Übung!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/XZ-0BRG1OiM" } }
+  - text: "Handgelenks-Übungen sind ideal als Start ins Training!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/KEY9D-PDWXc" } }
+  - text: "Hier 4 einfache Übungen! Das schaffst du! Viel Spaß!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/1BO8Sgx0pBY" } }
+
+
+  utter_greet:
+  - text: "Hallo wie geht es Dir?"
+  - text: "Servus, wie ist es?"
+  - text: "Hallihallo, wie geht's?"
+  - text: "Hey Sportler. Was geht ab?"
+  - text: "Hi Sportler. Wie geht's dir so?"
+  - text: "Servus Erdnuss, wie ist heute deine Mood?"
+  - text: "Hello, und wie ist die Stimmung?"
+  - text: "Heyho, wie geht's, wie steht's?"
+
+
+  utter_cheer_up:
+  - text: "Lass den Kopf nicht hängen. Schau mal:"
+    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F402298179194919860%2F&psig=AOvVaw1D3mR7lz22VIGgrs9BaV_S&ust=1668807483015000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCy4buWtvsCFQAAAAAdAAAAABAJ"
+  - text: "Morgen wird ein besserer Tag. Kopf hoch!"
+  - text: "Man kann nicht immer gut drauf sein, aber es wird wieder anders!"
+  - text: "Morgen sieht die Welt wieder ganz anders aus."
+
+  utter_motivate:
+  - text: "Motivation ist das, was dich starten lässt. Gewohnheit ist das, was dich weitermachen lässt 💪🏼"
+  - text: "Einen von zwei Schmerzen müssen wir ertragen: den Schmerz der Disziplin oder den eines schlechten Gewissens. Der Unterschied ist, Disziplin wiegt Gramm, ein schlechtes Gewissen wiegt Tonnen 😉"
+  - text: "Sorge gut für deinen Körper. Es ist der einzige Ort, den du zum Leben hast ✌🏻"
+  - text: "Eine Reise von tausend Meilen beginnt mit einem kleinen Schritt 😜"
+  - text: "Fit zu sein ist kein Ziel, es ist eine Lebenshaltung 🏋🏽"
+  - text: "Wer kämpft, kann verlieren. Wer nicht kämpft, hat schon verloren 😌"
+  - text: "Wenn du alles gibst, kannst du dir nichts vorwerfen 😏"
+  - text: "Deine größte Herausforderung ist nicht jemand anderes. Es sind die Schmerzen in deinen Beinen und die innere Stimme, sie sagt „Ich kann nicht“ – hör nicht auf sie. Du machst einfach weiter und dann hörst du, wie die Stimme flüstert „Ich kann“ - und dann stellst du fest, dass du ein anderer Mensch bist, als du es eben noch dachtest 💪🏻"
+
+
+  utter_did_that_help:
+  - text: "Hilft das?"
+  - text: "Bringt dir das was?"
+  - text: "Passt das für dich?"
+
+
+  utter_have_good_training:
+  - text: "Dann viel Spaß im Training!"
+  - text: "Viel Kraft im Training!"
+  - text: "Genieß das Training!"
+  - text: "Viel Erfolg im Training!"
+  - text: "Viel Spaß bei deinem Workout!"
+  - text: "Ich wünsch dir ein erfolgreiches Workout!"
+
+
+  utter_happy:
+  - text: "Perfekt!"
+  - text: "Das freut mich!"
+  - text: "Sehr gut ;)"
+  - text: "Super!"
+  - text: "Mega!"
+  - text: "Das macht mich echt glücklich!"
+
+
+  utter_sad:
+  - text: "Das tut mir leid..."
+  - text: "Das ist nicht schön..."
+  - text: "Schade..."
+  - text: "Das ist traurig..."
+
+
+  utter_goodbye:
+  - text: "Tschüss!"
+  - text: "Ciao!"
+  - text: "Mach's gut!"
+  - text: "Schreib mir bald wieder!"
+  - text: "Bis bald!"
+  - text: "Bis demnächst!"
+  - text: "Wiedersehen!"
+  - text: "Lass mich nicht zu lange warten. Servus!"
+
+
+  utter_iamabot:
+  - text: "Ich bin KänGuru und bin da, um dir bei deinem Training zu helfen."
+  - text: "Ich bin ein KänGuru-Chatbot powered by Rasa."
+
+  utter_greet_ask_name:
+  - text: "Hallo, wie heißt Du?"
+  - text: "Servus. Wie darf ich Dich nennen?"
+  - text: "Hey, was ist dein Name?"
+  - text: "Guten Tag, wie soll ich dich nennen?"
+  - text: "Hello, was ist dein Spitzname?"
+
+
+  utter_greet_with_name:
+  - text: "Hey, {username}. Alles klar?"
+  - text: "Hi {username}. Wie geht's?"
+  - text: "Hello {username}, wie ist die Stimmung?"
+  - text: "Olla {username}, wie ist dein Tag bisher?"
+  - text: "Hi {username}, wie geht's dir heute?"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+

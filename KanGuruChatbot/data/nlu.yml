@@ -1,0 +1,589 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hallo
+    - hi
+    - hi du
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - Servus
+    - na was geht ab?
+    - hello
+    - heyho
+    - olla
+    - Servus Erdnuss
+    - Hallöchen
+    - Na du?
+    - Moinsen
+
+- intent: greet_formal
+  examples: |
+    - Guten Tag
+    - Guten Abend
+    - Guten Morgen
+    - Grüßgott
+    - Grüße Sie
+    - Abend
+    - Mahlzeit
+
+
+- intent: goodbye
+  examples: |
+    - cu
+    - ciao
+    - gute Nacht
+    - bis dann
+    - bis gleich
+    - mach's gut
+    - hab einen schönen Tag noch
+    - schönes Wochenende
+    - guten Feierabend
+    - bye
+    - wir sehen uns
+    - Tschüss
+    - tschau
+    - wiedersehen
+    - machen Sie es gut
+
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - aha
+    - eben
+    - klar
+    - natürlich
+    - das klingt gut
+    - korrekt
+    - ja
+    - jap
+    - yep
+    - jep
+    - genau
+    - selbstverständlich
+    - du wusstest es
+    - jo
+    - ok
+    - ahja
+    - stimmt
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - nie
+    - ich glaube nicht
+    - das mag ich nicht
+    - gefällt mir nicht
+    - das nicht
+    - auf keinen Fall
+    - träum weiter
+    - auf gar keinen Fall
+    - nicht wirklich
+    - nein
+    - ne
+    - spinnst du?
+    - nie im Leben
+    - kommt nicht in die Frage
+    - niemals
+    - sicher nicht
+    - na
+    - unter keinen Umständen
+
+
+- intent: mood_great
+  examples: |
+    - perfekt
+    - super
+    - wunderbar
+    - toll
+    - fühle mich wie ein König
+    - ich fühle mich ausgezeichnet
+    - sehr gut
+    - es geht mir gut
+    - es geht mir sehr gut
+    - bin sehr motiviert
+    - so schön
+    - gut
+    - ausgezeichnet 
+    - besser
+    - fantastisch
+    - hammer
+    - top
+    - spitze
+
+
+- intent: mood_unhappy
+  examples: |
+    - es geht mir schlecht
+    - mein Tag war sehr schlecht
+    - schreklich
+    - Ich bin traurig
+    - bin heute schlecht gelaunt
+    - ich fühle mich nicht wirklich gut
+    - bin super traurig
+    - bin so sad
+    - nicht so gut
+    - unglücklich
+    - nicht wirklich gut
+    - könnte besser sein
+    - schlecht
+    - schlechter
+    - traurig
+    - niedergeschlagen
+    - unzufrieden
+
+
+- intent: bot_challenge
+  examples: |
+    - wer bist du?
+    - bist du ein Mensch?
+    - rede ich mit einem Menschen?
+    - bist du ein Chatbot?
+    - spreche ich mit einem Chatbot?
+    - bist du ein Junge oder ein Mädchen?
+    - bist du Mann oder Frau?
+    - was ist dein Geschlecht?
+
+- intent: my_name_is
+  examples: |
+    - Ich heiße [Gudrun](username)
+    - Ich bin [Tina](username)
+    - [Thomas](username)
+    - Mein Name ist [Anna](username)
+    - Ich bin der [Horst](username)
+    - [Hans](username)
+    - [Mariia] (username)
+    - [Johanna] (username)
+    - [Kathi] (username)
+    - [Simon] (username)
+
+- intent: bot_challenge_name
+  examples: |
+    - Wer bin ich?
+    - Wie heisse ich?
+    - Erinnerst du dich an meinen Namen?
+
+- intent: ask_travel_time
+  examples: |
+    - Sag mir wie lange es von [Holzapfelkreuth](from_station) zur [Hochschule Muenchen](to_station) dauert.
+    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zum [Olympiazentrum](to_station)?
+    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zum [Heimeranplatz](to_station)?
+    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zur [Poccistrasse](to_station)?
+    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zum [Odeonsplatz](to_station)?
+    - [Hochschule München](from_station) nach [Garching](to_station)
+
+- intent: want_to_train
+  examples: |
+    - Ich will heute trainieren
+    - Ich habe heute Lust auf Gym
+    - Lust auf ein Training
+    - möchte heute voll Gas geben
+    - habe Bock auf Schwitzen
+    - fühle mich heute stark und motiviert
+    - habe heute Zeit für ein paar Übungen
+    - habe Bock auf Training
+    - Bock auf Training
+    - Lust auf Sport heute
+    - will heute Sport treiben
+    - möchte Sport machen
+    - Ich bin richtig motiviert zu trainieren
+    - Los gehts
+    - Heute ziehen wir durch 
+
+
+- intent: had_training
+  examples: |
+    - war heute im Gym
+    - hatte gerade ein hartes Training
+    - ich war heute schon im Training
+    - ich habe trainiert
+    - ich habe ein paar Übungen gemacht
+    - heute bin ich fleißig im Gym gewesen
+    - hab schon trainiert
+    - heute im Gym voll Gas gegeben 
+    - Ich hab mich heute schon ausgepowert
+    - Training ist abgehakt für heute
+    - hab heut schon Morgensport gemacht
+    - Mein workout ist schon erledigt
+
+- intent: ask_exercise_bauch
+  examples: |
+    - sixpack
+    - Bauch
+    - Ich möchte meinen Bauch trainieren
+    - Zeig mir Bauch Übungen
+    - Was kann ich für meinen Bauch tun?
+    - Wie bekomme ich starken Bauch?
+    - Bauchübungen
+    - Bauch Workout
+    - Kennst du Übungen für Bauch?
+    - Ich möchte einen strafferen Bauch
+    - Ich möchte ein Sixpack
+    - Ich will definierte Bauchmuskeln
+    - Wie komme ich zu einem flacheren Bauch?
+    - Wie bekomme ich am schnellsten einen definierten Bauch?
+    - Ich will heute Bauch trainieren.
+    - Hast du Übungen für Bauch?
+    - Bauch Training
+    - Bauch Muskulatur
+    - Bauchmuskeln aufbauen
+    - Übungenvorschläge für Bauch
+    - Ich brauche Übungen für Bauch
+    - Etwas für Bauch?
+    - Wie kann man Bauch verbessern?
+    - Wie kann man Bauch trainieren?
+    - Wie kann man Bauchmuskeln trainieren?
+    - Wie kann ich meinen Bauch trainieren?
+    - Ich möchte heute Bauchmuskeln trainieren.
+    - Ich möchte Bauch Training machen.
+    - Ich brauche neue Übungen für meinen Bauch.
+    - Ich will neue Übungen für Bauch bekommen.
+    - Kannst du mir Übungen für Bauch finden?
+    - Ich brauche die besten Übungen für Bauch.
+
+- intent: ask_exercise_beine
+  examples: |
+    - Beine
+    - legs
+    - leg
+    - leg day
+    - legs training
+    - Ich möchte meine Beine trainieren
+    - Zeig mir Beine Übungen
+    - Was kann ich für meine Beine tun?
+    - Wie bekomme ich starke Beine?
+    - Beineübungen
+    - Beine Workout
+    - Hast du Übungen für Beine?
+    - Kennst du Übungen für Beine?
+    - Ich möchte dass meine Beine besser aussehen
+    - Was kann ich für meine Beine tun?
+    - Ich will definierte Beine
+    - Ich will schlanke Beine
+    - Ich will heute Beine trainieren.
+    - Hast du Übungen für Beine?
+    - Beine Training
+    - Beine Muskulatur
+    - Beinemuskeln aufbauen
+    - Übungenvorschläge für Beine
+    - Ich brauche Übungen für Beine
+    - Etwas für Beine?
+    - Wie kann man Beine verbessern?
+    - Wie kann man Beine trainieren?
+    - Wie kann man Beinemuskeln trainieren?
+    - Wie kann ich meine Beine trainieren?
+    - Ich möchte heute Beinemuskeln trainieren.
+    - Ich möchte Beine Training machen.
+    - Ich brauche neue Übungen für meine Beine.
+    - Ich will neue Übungen für Beine bekommen.
+    - Kannst du mir Übungen für Beine finden?
+    - Ich brauche die besten Übungen für Beine.
+
+- intent: ask_exercise_po
+  examples: |
+    - Po
+    - Zeig mir Po Übungen
+    - Was kann ich für meinen Po tun?
+    - Wie bekomme ich einen runden Po?
+    - Poübungen
+    - Po Workout
+    - Pomuskeln
+    - Ich will meinen Po trainieren
+    - Ich bin unzufrieden mit meinem Po
+    - Ich brauche ein Workout für meinen Po
+    - Mein Po ist nicht rund genug
+    - Hast du Übungen für Po?
+    - Kannst du mir Übungen speziell für meinen Po zeigen?
+    - Booty
+    - Ich will einen größeren Po
+    - Ich will einen runderen Po
+    - Ich will meinen Booty definieren
+    - Ich will heute Po trainieren.
+    - Hast du Übungen für Po?
+    - Po Training
+    - Booty Training
+    - Po Muskulatur
+    - Pomuskeln aufbauen
+    - Übungenvorschläge für Po
+    - Ich brauche Übungen für Po
+    - Etwas für Po?
+    - Wie kann man Po verbessern?
+    - Wie kann man Po trainieren?
+    - Wie kann man Pomuskeln trainieren?
+    - Wie kann ich meinen Booty trainieren?
+    - Ich möchte heute Pomuskeln trainieren.
+    - Ich möchte Po Training machen.
+    - Ich brauche neue Übungen für meinen Po.
+    - Ich will neue Übungen für Po bekommen.
+    - Kannst du mir Übungen für Booty finden?
+    - Ich brauche die besten Übungen für Po.
+
+- intent: ask_exercise_nacken
+  examples: |
+    - Ich will heute Nacken trainieren.
+    - Ich möchte meinen Nacken trainieren
+    - Zeig mir Nacken Übungen
+    - Was kann ich für meinen Nacken tun?
+    - Wie bekomme ich starken Nacken?
+    - Nackenübungen
+    - Nacken Workout
+    - Hast du Übungen für Nacken?
+    - Kennst du Übungen für Nacken?
+    - Nacken Training
+    - Nacken Muskulatur
+    - Nackenmuskeln aufbauen
+    - Nacken
+    - Übungenvorschläge für Nacken
+    - Ich brauche Übungen für Nacken
+    - Etwas für Nacken?
+    - Wie kann man Nacken verbessern?
+    - Wie kann man Nacken trainieren?
+    - Wie kann man Nackenmuskeln trainieren?
+    - Wie kann ich meinen Nacken trainieren?
+    - Ich möchte heute Nackenmuskeln trainieren.
+    - Ich möchte Nacken Training machen.
+    - Ich brauche neue Übungen für meinen Nacken.
+    - Ich will neue Übungen für Nacken bekommen.
+    - Kannst du mir Übungen für Nacken finden?
+    - Ich brauche die besten Übungen für Nacken.
+
+
+- intent: ask_exercise_schultern
+  examples: |
+    - Ich will heute Schultern trainieren.
+    - Ich möchte meine Schultern trainieren
+    - Zeig mir Schultern Übungen
+    - Was kann ich für meine Schultern tun?
+    - Wie bekomme ich breite Schultern?
+    - Schulternübungen
+    - Schultern Workout
+    - Hast du Übungen für Schultern?
+    - Kennst du Übungen für Schultern?
+    - Schultern Training
+    - Schultern Muskulatur
+    - Schultern
+    - Schulternmuskeln aufbauen
+    - Übungenvorschläge für Schultern
+    - Ich brauche Übungen für Schultern
+    - Etwas für Schultern?
+    - Wie kann man Schultern verbessern?
+    - Wie kann man Schultern trainieren?
+    - Wie kann man Schulternmuskeln trainieren?
+    - Wie kann ich meinen Schultern trainieren?
+    - Ich möchte heute Schulternmuskeln trainieren.
+    - Ich möchte Schultern Training machen.
+    - Ich brauche neue Übungen für meine Schultern.
+    - Ich will neue Übungen für Schultern bekommen.
+    - Kannst du mir Übungen für Schultern finden?
+    - Ich brauche die besten Übungen für Schultern.
+
+- intent: ask_exercise_trizeps
+  examples: |
+    - Ich will heute Trizeps trainieren.
+    - Ich möchte meinen Trizeps trainieren
+    - Zeig mir Trizeps Übungen
+    - Was kann ich für meinen Trizeps tun?
+    - Wie bekomme ich einen großen Trizeps?
+    - Trizepsübungen
+    - Trizeps Workout
+    - Hast du Übungen für Trizeps?
+    - Kennst du Übungen für Trizeps?
+    - Trizeps Training
+    - Trizeps Muskulatur
+    - Trizeps
+    - Trizepsmuskel aufbauen
+    - Übungenvorschläge für Trizeps
+    - Ich brauche Übungen für Trizeps
+    - Etwas für Trizeps?
+    - Wie kann man Trizeps verbessern?
+    - Wie kann man Trizeps trainieren?
+    - Wie kann man Trizepsmuskel trainieren?
+    - Wie kann ich meinen Trizeps trainieren?
+    - Ich möchte heute Trizepsmuskeln trainieren.
+    - Ich möchte Trizeps Training machen.
+    - Ich brauche neue Übungen für meinen Trizeps.
+    - Ich will neue Übungen für Trizeps bekommen.
+    - Kannst du mir Übungen für Trizeps finden?
+    - Ich brauche die besten Übungen für Trizeps.
+
+- intent: ask_exercise_bizeps
+  examples: |
+    - Ich möchte meinen Bizeps trainieren
+    - Zeig mir Bizeps Übungen
+    - Mein Bizeps ist zu klein
+    - Wie bekomme ich einen größeren Bizeps?
+    - Bizeps
+    - Bizeps Übungen
+    - Ich will meinen Bizeps trainieren
+    - Meine Arme sind zu dünn
+    - Bizeps Workout
+    - Ich brauche ein Workout für meinen Bizeps
+    - Hast du Übungen für Bizeps?
+    - Bizeps Training
+    - Bizeps Muskulatur
+    - Bizepsmuskel aufbauen
+    - Übungenvorschläge für Bizeps
+    - Ich brauche Übungen für Bizeps
+    - Etwas für Bizeps?
+    - Wie kann man Bizeps verbessern?
+    - Wie kann man Bizeps trainieren?
+    - Wie kann man Bizepsmuskel trainieren?
+    - Wie kann ich meinen Bizeps trainieren?
+    - Ich möchte heute Bizepsmuskeln trainieren.
+    - Ich möchte Bizeps Training machen.
+    - Ich brauche neue Übungen für meinen Bizeps.
+    - Ich will neue Übungen für Bizeps bekommen.
+    - Kannst du mir Übungen für Bizeps finden?
+    - Ich brauche die besten Übungen für Bizeps.
+
+- intent: ask_exercise_brust
+  examples: |
+    - Zeig mir Brust Übungen
+    - Was kann ich für meine Brust tun?
+    - Wie bekomme ich eine größere Brust?
+    - Brust
+    - Brustübungen
+    - Brust Workout
+    - Brustmuskeln
+    - Ich will meine Brustmuskeln trainieren
+    - Ich bin unzufrieden mit meiner Brust
+    - Ich brauche ein Workout für meine Brust
+    - Hast du Übungen für Brust?
+    - Brust Training
+    - Brust Muskulatur
+    - Brustmuskel aufbauen
+    - Übungenvorschläge für Brust
+    - Ich brauche Übungen für Brust
+    - Etwas für Brust?
+    - Wie kann man Brust verbessern?
+    - Wie kann man Brust trainieren?
+    - Wie kann man Brustmuskel trainieren?
+    - Wie kann ich meine Brust trainieren?
+    - Ich möchte heute Brustmuskeln trainieren.
+    - Ich möchte Brust Training machen.
+    - Ich brauche neue Übungen für meine Brust.
+    - Ich will neue Übungen für Brust bekommen.
+    - Kannst du mir Übungen für Brust finden?
+    - Ich brauche die besten Übungen für Brust.
+
+- intent: ask_exercise_rücken
+  examples: |
+    - Ich möchte meinen Rücken trainieren
+    - Zeig mir Rücken Übungen
+    - Was kann ich für meinen Rücken tun?
+    - Wie bekomme ich einen breiteren Rücken?
+    - Rücken
+    - rucken
+    - Rucken
+    - Ruecken
+    - ruecken
+    - Rückenübungen
+    - Rücken Workout
+    - Rückenmuskeln
+    - Ich will meine Rückenmuskeln trainieren
+    - Ich bin unzufrieden mit meinem Rücken
+    - Ich brauche ein Workout für meinen Rücken
+    - Mein Rücken ist nicht breit genug
+    - Hast du Übungen für Rücken?
+    - Rücken Training
+    - Rücken Muskulatur
+    - Rückenmuskel aufbauen
+    - Übungenvorschläge für Rücken
+    - Ich brauche Übungen für Rücken
+    - Etwas für Rücken?
+    - Wie kann man Rücken verbessern?
+    - Wie kann man Rücken trainieren?
+    - Wie kann man Rückenmuskel trainieren?
+    - Wie kann ich meinen Rücken trainieren?
+    - Ich möchte heute Rückenmuskeln trainieren.
+    - Ich möchte Rücken Training machen.
+    - Ich brauche neue Übungen für meinen Rücken.
+    - Ich will neue Übungen für Rücken bekommen.
+    - Kannst du mir Übungen für Rücken finden?
+    - Ich brauche die besten Übungen für Rücken.
+
+- intent: ask_exercise_arme
+  examples: |
+    - starke Arme
+    - Arm
+    - Arm-Workout
+    - arm Übung
+    - Arm training
+    - arme
+    - Unterarme
+    - Oberarme
+    - Ich möchte meine Arme trainieren
+    - Ich möchte starke Arme
+    - Ich will definierte Arm-Muskeln
+    - Wie komme ich zu stärkeren Armen?
+    - Wie bekomme ich am schnellsten eine starke Armmuskulatur?
+
+- intent: ask_exercise_waden
+  examples: |
+    - Waden
+    - Waden Übung
+    - Waden-Workout
+    - Wade
+    - Wade trainieren
+    - Ich möchte, dass meine Waden definierter aussehen
+    - Ich möchte dass meine Waden schlank aussehen
+    - Was kann ich für meine Waden tun?
+    - Ich will definierte Waden
+    - Ich will schlanke Waden
+    - Ich möchte meine Waden trainieren
+
+- intent: ask_exercise_handgelenke
+  examples: |
+    - Handgelenk
+    - Handgelenke
+    - Kannst du mir Übungen speziell für Handgelenke zeigen?
+    - Ich möchte meine Handgelenke trainieren
+    - Ich will meine Handgelenke trainieren
+    - Ich brauche Übungen für Handgelenke
+    - Hast du auch was für die Handgelenke?
+    - Wie sieht es mit Handgelenken aus?
+    - Handgelenke stärken
+    - Handgelenke trainieren
+
+
+- intent: need_help
+  examples: |
+    - Ich brauche deine Hilfe.
+    - Kannst du helfen?
+    - Need some help
+    - Hilf mir
+    - Hilfe
+    - Hilfe bitte
+    - Ich brauche einen Tipp
+    - Hilf mir bitte
+    - Help please
+    - Würdest du mir helfen?
+    - Ich brauche einen Ratschlag von dir
+    - Gibst du mir einen Tipp?
+    - Hast du einen Rat für mich
+    - Bitte ich brauch eine Lösung
+    - Problem 
+
+- intent: lazy_today
+  examples: |
+    - heute kein Bock
+    - keinen Bock
+    - kein' Bock
+    - heute keine Lust
+    - keine Lust heute
+    - heute will ich zu Hause bleiben
+    - will heute nicht trainieren
+    - KB heute
+    - keine Lust auf das Training
+
+
+
