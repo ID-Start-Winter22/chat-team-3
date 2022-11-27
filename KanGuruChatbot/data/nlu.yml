@@ -291,6 +291,11 @@ nlu:
 - intent: ask_exercise_po
   examples: |
     - Po
+    - Pobacken
+    - Pobacke
+    - Hintern
+    - Arsch
+    - Hinterteil
     - Zeig mir Po Übungen
     - Was kann ich für meinen Po tun?
     - Wie bekomme ich einen runden Po?
