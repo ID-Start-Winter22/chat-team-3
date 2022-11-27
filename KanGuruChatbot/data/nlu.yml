@@ -386,6 +386,45 @@ nlu:
     - Kannst du mir Übungen für Schultern finden?
     - Ich brauche die besten Übungen für Schultern.
 
+- intent: ask_exercise_stretching
+  examples: |
+    - Ich will heute Stretching machen.
+    - Ich möchte meinen Körper entspannen.
+    - Ich möchte meine Muskeln dehnen.
+    - Dehnen Übungen
+    - Stretching Übungen
+    - Stretching
+    - Dehnen
+    - Zeig mir Stretching Übungen
+    - Zeig mir Dehnen Übungen
+    - Was kann ich zum Dehnen tun?
+    - Schick mir Stretching Workout
+    - Stretchingübungen
+    - Stretching Workout
+    - Dehnen workout
+    - Hast du Übungen zum Dehnen?
+    - Kennst du Übungen für Stretching?
+    - Stretching Training
+    - Dehnen Training
+    - Übungenvorschläge für Stretching
+    - Ich brauche Übungen für Stretching
+    - Etwas für Stretching?
+    - Etwas für Dehnen?
+    - Wie kann man Flexibilität des Körpers verbessern?
+    - Flexibilität
+    - flexibel
+    - flexibel werden
+    - ich will flexibel sein
+    - Wie kann man Muskeln dehnen?
+    - Wie kann man Stretching machen?
+    - Wie kann ich meinen Körper flexibler machen?
+    - Ich möchte heute dehnen.
+    - Ich möchte Stretching Training machen.
+    - Ich brauche neue Übungen für Stretching Training.
+    - Ich will neue Übungen für Stretching bekommen.
+    - Kannst du mir Übungen für Stretching finden?
+    - Ich brauche die besten Übungen für Stretching.
+
 - intent: ask_exercise_trizeps
   examples: |
     - Ich will heute Trizeps trainieren.

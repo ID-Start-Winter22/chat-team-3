@@ -242,3 +242,8 @@ stories:
   - intent: lazy_today
   - action: utter_motivate
 
+- story: User asks for stretching
+  steps:
+  - intent: ask_exercise_stretching
+  - action: utter_exercise_stretching
+

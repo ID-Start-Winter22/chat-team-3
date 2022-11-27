@@ -24,6 +24,7 @@ intents:
   - ask_exercise_waden
   - ask_exercise_arme
   - ask_exercise_handgelenke
+  - ask_exercise_stretching
   - want_to_train
   - lazy_today
   - had_training
@@ -198,6 +199,13 @@ responses:
   - text: "Hier 4 einfache Übungen! Das schaffst du! Viel Spaß!"
     attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/1BO8Sgx0pBY" } }
 
+  utter_exercise_stretching:
+  - text: "Hier ist ein Stretching Workout für dich! Entspann dich mal 🙌🏼"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/g_tea8ZNk5A" } }
+  - text: "Gute Wahl 👍🏻 Stretching ist sehr wichtig für deinen Körper. Genieß es 😇"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/qULTwquOuT4" } }
+  - text: "Ich habe ein Video für dich 🤓 Viel Spaß!"
+    attachment: { "type": "video", "payload":{ "src": "https://www.youtube.com/embed/qFgwrTc1e1I" } }
 
   utter_greet:
   - text: "Hallo wie geht es Dir?"
