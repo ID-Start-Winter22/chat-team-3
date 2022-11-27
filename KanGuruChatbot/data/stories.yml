@@ -247,3 +247,8 @@ stories:
   - intent: ask_exercise_stretching
   - action: utter_exercise_stretching
 
+- story: User says thank you
+  steps:
+  - intent: thanks
+  - action: utter_gerne
+

@@ -1,6 +1,41 @@
 version: "3.0"
 
 nlu:
+
+- intent: thanks
+  examples: |
+    - danke
+    - dankeschon
+    - dankeschoen
+    - danke schoen
+    - danke schön
+    - vielen dank
+    - vilen dank
+    - villen dank
+    - vielen lieben Dank
+    - thx
+    - thanks
+    - thank you
+    - ich bedanke mich
+    - ich danke dir
+    - danke dir
+    - du hast mir sehr geholfen
+    - ich bin dankbar
+    - danke danke
+    - herzlichen Dank
+    - tausend Dank
+    - Ich bin voller Dankbarkeit
+    - dankbar bin ich
+    - meine Dankbarkeit
+    - meinen Dank spreche ich aus
+    - guter Tipp
+    - cooles Training
+    - wow
+    - nice
+
+
+
+
 - intent: greet
   examples: |
     - hey

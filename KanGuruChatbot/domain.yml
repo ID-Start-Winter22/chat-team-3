@@ -29,6 +29,7 @@ intents:
   - lazy_today
   - had_training
   - need_help
+  - thanks
 
 actions:
   - action_store_name
@@ -217,6 +218,14 @@ responses:
   - text: "Hello, und wie ist die Stimmung?"
   - text: "Heyho, wie geht's, wie steht's?"
 
+  utter_gerne:
+  - text: "Sehr gerne 😜"
+  - text: "Gern geshehen 😊"
+  - text: "Immer gerne 😎"
+  - text: "Nichts zu danken ✌🏻"
+  - text: "Kein Thema 🤙🏻"
+  - text: "Ich bin immer für dich da, Sportler 🤙🏻😎"
+  - text: "Bitte sehr mein Freund 😉"
 
   utter_cheer_up:
   - text: "Lass den Kopf nicht hängen. Schau mal:"
