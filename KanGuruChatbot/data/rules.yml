@@ -16,6 +16,11 @@ rules:
   - intent: had_training
   - action: utter_praise
 
+- rule: User says thank you, the chatbot you're welcome
+  steps:
+  - intent: thanks
+  - action: utter_gerne
+
 
 
 
