@@ -344,6 +344,10 @@ responses:
   - text: "Hey, was ist dein Name?"
   - text: "Guten Tag, wie soll ich dich nennen?"
   - text: "Hello, was ist dein Spitzname?"
+  - text: "Hallo, schön dich kennenzulernen. Mein Name ist KänGuru und wie heißt du?" 
+  - text: "Hey! Verrätst du mir deinen Namen?"
+  - text: "Hi! Wie möchtest du genannt werden?"
+
 
 
   utter_greet_with_name:
@@ -352,6 +356,10 @@ responses:
   - text: "Hello {username}, wie ist die Stimmung?"
   - text: "Olla {username}, wie ist dein Tag bisher?"
   - text: "Hi {username}, wie geht's dir heute?"
+  - text: "Hey, {username}. Bereit deine Fitness zu verbessern?" 
+  - text: "Hallo, {username}, schön dich zu sehen. 😊"
+  - text: "Hallo {username}. Wie geht's, wie steht's? 😉"
+
 
 
 session_config:
