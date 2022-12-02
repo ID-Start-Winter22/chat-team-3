@@ -22,7 +22,10 @@ nlu:
     - du hast mir sehr geholfen
     - ich bin dankbar
     - danke danke
+    - danke sehr
     - herzlichen Dank
+    - sehr hilfreich
+    - das war hilfreich
     - tausend Dank
     - Ich bin voller Dankbarkeit
     - dankbar bin ich
@@ -32,7 +35,7 @@ nlu:
     - cooles Training
     - wow
     - nice
-
+    - danke für die Hilfe
 
 
 

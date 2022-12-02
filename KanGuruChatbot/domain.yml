@@ -226,6 +226,9 @@ responses:
   - text: "Kein Thema 🤙🏻"
   - text: "Ich bin immer für dich da, Sportler 🤙🏻😎"
   - text: "Bitte sehr mein Freund 😉"
+  - text: "Kein Problem 🤙🏻"
+  - text: "Immer gerne doch ✌🏻"
+  - text: "Dafür bin ich doch da Sportler 🤟🏻"
 
   utter_cheer_up:
   - text: "Lass den Kopf nicht hängen. Schau mal:"
