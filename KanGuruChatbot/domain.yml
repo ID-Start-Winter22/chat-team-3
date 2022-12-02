@@ -12,35 +12,26 @@ intents:
   - my_name_is
   - bot_challenge_name
   - ask_travel_time
-  - ask_exercise_nacken
-  - ask_exercise_schultern
-  - ask_exercise_trizeps
-  - ask_exercise_bauch
-  - ask_exercise_po
-  - ask_exercise_beine
-  - ask_exercise_bizeps
-  - ask_exercise_brust
-  - ask_exercise_rücken
-  - ask_exercise_waden
-  - ask_exercise_arme
-  - ask_exercise_handgelenke
-  - ask_exercise_stretching
+  - ask_exercise
   - want_to_train
   - lazy_today
   - had_training
   - need_help
   - thanks
+  - wow
 
 actions:
   - action_store_name
   - action_get_name
   - action_get_travel_time
   - action_send_youtube_video
+  - action_give_video0
 
 entities:
   - username
   - from_station
   - to_station
+  - muskelgruppe
 
 slots:
   username:
@@ -61,6 +52,14 @@ slots:
     mappings:
     - type: from_entity
       entity: to_station
+  muskelgruppe:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: muskelgruppe
+      intent: ask_exercise
+      not_intent: had_training
 
 responses:
 

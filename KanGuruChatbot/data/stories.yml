@@ -154,67 +154,6 @@ stories:
   - action: utter_ask_need_help
   - intent: affirm
   - action: utter_what_exactly_train
-  
-- story: Ask for Nacken exercises
-  steps:
-  - intent: ask_exercise_nacken
-  - action: utter_exercise_nacken
-
-- story: Ask for Schultern exercises
-  steps:
-  - intent: ask_exercise_schultern
-  - action: utter_exercise_schultern
-
-- story: Ask for Trizeps exercises
-  steps:
-  - intent: ask_exercise_trizeps
-  - action: utter_exercise_trizeps
-
-- story: Ask for Bauch exercises
-  steps:
-  - intent: ask_exercise_bauch
-  - action: utter_exercise_bauch
-
-- story: Ask for Beine exercises
-  steps:
-  - intent: ask_exercise_beine
-  - action: utter_exercise_beine
-
-- story: Ask for Po exercises
-  steps:
-  - intent: ask_exercise_po
-  - action: utter_exercise_po
-
-- story: Ask for Bizeps exercises
-  steps:
-  - intent: ask_exercise_bizeps
-  - action: utter_exercise_bizeps
-
-- story: Ask for Brust exercises
-  steps:
-  - intent: ask_exercise_brust
-  - action: utter_exercise_brust
-
-- story: Ask for Rücken exercises
-  steps:
-  - intent: ask_exercise_rücken
-  - action: utter_exercise_rücken
-
-- story: Ask for Arme exercises
-  steps:
-  - intent: ask_exercise_arme
-  - action: utter_exercise_arme
-
-- story: Ask for Waden exercises
-  steps:
-  - intent: ask_exercise_waden
-  - action: utter_exercise_waden
-
-- story: Ask for Handgelenke exercises
-  steps:
-  - intent: ask_exercise_handgelenke
-  - action: utter_exercise_handgelenke
-
 
 - story: Offer help with exercises 1
   steps:
@@ -242,8 +181,12 @@ stories:
   - intent: lazy_today
   - action: utter_motivate
 
-- story: User asks for stretching
+- story: Ask for exercises
   steps:
-  - intent: ask_exercise_stretching
-  - action: utter_exercise_stretching
+  - intent: ask_exercise
+  - action: action_give_video0
 
+- story: youtube video michael
+  steps:
+  - intent: wow
+  - action: action_send_youtube_video

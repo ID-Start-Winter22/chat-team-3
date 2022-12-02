@@ -89,4 +89,27 @@ class ActionYouTubeVideos(Action):
         })
         return[]
 
+video_trainings = {"Po": ["https://www.youtube.com/embed/ii8WjM8Va70", "https://www.youtube.com/embed/tn57ZkO8lnE", "https://www.youtube.com/embed/VN8lB8ehpkk"],
+    "Bauch":["https://www.youtube.com/embed/ouFOaLWmerk", "https://www.youtube.com/embed/84EkBBwJc3A", "https://www.youtube.com/embed/LbyGA5XrkF4"]
+    }
+
+class ActionTrainingsVideos(Action):
+    def name(self) -> Text:
+        return "action_give_video0"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        muskelgruppe_detected = tracker.get_slot("muskelgruppe")
+        if not muskelgruppe_detected:
+            dispatcher.utter_message("Sorry, aber ich habe die Muskelgruppe nicht erkannt. Probier es nochmal bitte 🤓")
+        elif muskelgruppe_detected in video_trainings.keys():
+            for key in video_trainings:
+                if key == muskelgruppe_detected:
+                    link = video_trainings[muskelgruppe_detected][0]
+                    video0 = {"type":"video"} 
+                    video0["payload"] = {"titel": "Die besten Ubungen", "scr": link }
+                    dispatcher.utter_message("Hier ist ein Videotraining für {}. Viel Spaß 💪🏻🔥".format(muskelgruppe_detected))
+                    print(video0)
+                    dispatcher.utter_message(attachment = video0)
+        return[]
+
 

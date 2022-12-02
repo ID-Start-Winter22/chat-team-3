@@ -1,6 +1,11 @@
 version: "3.0"
 
 nlu:
+- intent: wow
+  examples: |
+    - wow
+    - Wow
+    - Wow!
 
 - intent: thanks
   examples: |
@@ -250,388 +255,411 @@ nlu:
     - hab heut schon Morgensport gemacht
     - Mein workout ist schon erledigt
 
-- intent: ask_exercise_bauch
+- intent: ask_exercise
   examples: |
-    - sixpack
-    - Bauch
-    - Ich möchte meinen Bauch trainieren
-    - Zeig mir Bauch Übungen
-    - Was kann ich für meinen Bauch tun?
-    - Wie bekomme ich starken Bauch?
-    - Bauchübungen
-    - Bauch Workout
-    - Kennst du Übungen für Bauch?
-    - Ich möchte einen strafferen Bauch
-    - Ich möchte ein Sixpack
-    - Ich will definierte Bauchmuskeln
-    - Wie komme ich zu einem flacheren Bauch?
-    - Wie bekomme ich am schnellsten einen definierten Bauch?
-    - Ich will heute Bauch trainieren.
-    - Hast du Übungen für Bauch?
-    - Bauch Training
-    - Bauch Muskulatur
-    - Bauchmuskeln aufbauen
-    - Übungenvorschläge für Bauch
-    - Ich brauche Übungen für Bauch
-    - Etwas für Bauch?
-    - Wie kann man Bauch verbessern?
-    - Wie kann man Bauch trainieren?
-    - Wie kann man Bauchmuskeln trainieren?
-    - Wie kann ich meinen Bauch trainieren?
-    - Ich möchte heute Bauchmuskeln trainieren.
-    - Ich möchte Bauch Training machen.
-    - Ich brauche neue Übungen für meinen Bauch.
-    - Ich will neue Übungen für Bauch bekommen.
-    - Kannst du mir Übungen für Bauch finden?
-    - Ich brauche die besten Übungen für Bauch.
-
-- intent: ask_exercise_beine
-  examples: |
-    - Beine
-    - legs
-    - leg
-    - leg day
-    - legs training
-    - Ich möchte meine Beine trainieren
-    - Zeig mir Beine Übungen
-    - Was kann ich für meine Beine tun?
-    - Wie bekomme ich starke Beine?
-    - Beineübungen
-    - Beine Workout
-    - Hast du Übungen für Beine?
-    - Kennst du Übungen für Beine?
-    - Ich möchte dass meine Beine besser aussehen
-    - Was kann ich für meine Beine tun?
-    - Ich will definierte Beine
-    - Ich will schlanke Beine
-    - Ich will heute Beine trainieren.
-    - Hast du Übungen für Beine?
-    - Beine Training
-    - Beine Muskulatur
-    - Beinemuskeln aufbauen
-    - Übungenvorschläge für Beine
-    - Ich brauche Übungen für Beine
-    - Etwas für Beine?
-    - Wie kann man Beine verbessern?
-    - Wie kann man Beine trainieren?
-    - Wie kann man Beinemuskeln trainieren?
-    - Wie kann ich meine Beine trainieren?
-    - Ich möchte heute Beinemuskeln trainieren.
-    - Ich möchte Beine Training machen.
-    - Ich brauche neue Übungen für meine Beine.
-    - Ich will neue Übungen für Beine bekommen.
-    - Kannst du mir Übungen für Beine finden?
-    - Ich brauche die besten Übungen für Beine.
-
-- intent: ask_exercise_po
-  examples: |
-    - Po
-    - Pobacken
-    - Pobacke
-    - Hintern
-    - Arsch
-    - Hinterteil
-    - Zeig mir Po Übungen
-    - Was kann ich für meinen Po tun?
-    - Wie bekomme ich einen runden Po?
-    - Poübungen
-    - Po Workout
-    - Pomuskeln
-    - Ich will meinen Po trainieren
-    - Ich bin unzufrieden mit meinem Po
-    - Ich brauche ein Workout für meinen Po
-    - Mein Po ist nicht rund genug
-    - Hast du Übungen für Po?
-    - Kannst du mir Übungen speziell für meinen Po zeigen?
-    - Booty
-    - Ich will einen größeren Po
-    - Ich will einen runderen Po
-    - Ich will meinen Booty definieren
-    - Ich will heute Po trainieren.
-    - Hast du Übungen für Po?
-    - Po Training
-    - Booty Training
-    - Po Muskulatur
-    - Pomuskeln aufbauen
-    - Übungenvorschläge für Po
-    - Ich brauche Übungen für Po
-    - Etwas für Po?
-    - Wie kann man Po verbessern?
-    - Wie kann man Po trainieren?
-    - Wie kann man Pomuskeln trainieren?
-    - Wie kann ich meinen Booty trainieren?
-    - Ich möchte heute Pomuskeln trainieren.
-    - Ich möchte Po Training machen.
-    - Ich brauche neue Übungen für meinen Po.
-    - Ich will neue Übungen für Po bekommen.
-    - Kannst du mir Übungen für Booty finden?
-    - Ich brauche die besten Übungen für Po.
-
-- intent: ask_exercise_nacken
-  examples: |
-    - Ich will heute Nacken trainieren.
-    - Ich möchte meinen Nacken trainieren
-    - Zeig mir Nacken Übungen
-    - Was kann ich für meinen Nacken tun?
-    - Wie bekomme ich starken Nacken?
-    - Nackenübungen
-    - Nacken Workout
-    - Hast du Übungen für Nacken?
-    - Kennst du Übungen für Nacken?
-    - Nacken Training
-    - Nacken Muskulatur
-    - Nackenmuskeln aufbauen
-    - Nacken
-    - Übungenvorschläge für Nacken
-    - Ich brauche Übungen für Nacken
-    - Etwas für Nacken?
-    - Wie kann man Nacken verbessern?
-    - Wie kann man Nacken trainieren?
-    - Wie kann man Nackenmuskeln trainieren?
-    - Wie kann ich meinen Nacken trainieren?
-    - Ich möchte heute Nackenmuskeln trainieren.
-    - Ich möchte Nacken Training machen.
-    - Ich brauche neue Übungen für meinen Nacken.
-    - Ich will neue Übungen für Nacken bekommen.
-    - Kannst du mir Übungen für Nacken finden?
-    - Ich brauche die besten Übungen für Nacken.
-
-
-- intent: ask_exercise_schultern
-  examples: |
-    - Ich will heute Schultern trainieren.
-    - Ich möchte meine Schultern trainieren
-    - Zeig mir Schultern Übungen
-    - Was kann ich für meine Schultern tun?
-    - Wie bekomme ich breite Schultern?
-    - Schulternübungen
-    - Schultern Workout
-    - Hast du Übungen für Schultern?
-    - Kennst du Übungen für Schultern?
-    - Schultern Training
-    - Schultern Muskulatur
-    - Schultern
-    - Schulternmuskeln aufbauen
-    - Übungenvorschläge für Schultern
-    - Ich brauche Übungen für Schultern
-    - Etwas für Schultern?
-    - Wie kann man Schultern verbessern?
-    - Wie kann man Schultern trainieren?
-    - Wie kann man Schulternmuskeln trainieren?
-    - Wie kann ich meinen Schultern trainieren?
-    - Ich möchte heute Schulternmuskeln trainieren.
-    - Ich möchte Schultern Training machen.
-    - Ich brauche neue Übungen für meine Schultern.
-    - Ich will neue Übungen für Schultern bekommen.
-    - Kannst du mir Übungen für Schultern finden?
-    - Ich brauche die besten Übungen für Schultern.
-
-- intent: ask_exercise_stretching
-  examples: |
-    - Ich will heute Stretching machen.
-    - Ich möchte meinen Körper entspannen.
-    - Ich möchte meine Muskeln dehnen.
-    - Dehnen Übungen
-    - Stretching Übungen
-    - Stretching
-    - Dehnen
-    - Zeig mir Stretching Übungen
-    - Zeig mir Dehnen Übungen
-    - Was kann ich zum Dehnen tun?
-    - Schick mir Stretching Workout
-    - Stretchingübungen
-    - Stretching Workout
-    - Dehnen workout
-    - Hast du Übungen zum Dehnen?
-    - Kennst du Übungen für Stretching?
-    - Stretching Training
-    - Dehnen Training
-    - Übungenvorschläge für Stretching
-    - Ich brauche Übungen für Stretching
-    - Etwas für Stretching?
-    - Etwas für Dehnen?
-    - Wie kann man Flexibilität des Körpers verbessern?
-    - Flexibilität
-    - flexibel
-    - flexibel werden
-    - ich will flexibel sein
-    - Wie kann man Muskeln dehnen?
-    - Wie kann man Stretching machen?
-    - Wie kann ich meinen Körper flexibler machen?
-    - Ich möchte heute dehnen.
-    - Ich möchte Stretching Training machen.
-    - Ich brauche neue Übungen für Stretching Training.
-    - Ich will neue Übungen für Stretching bekommen.
-    - Kannst du mir Übungen für Stretching finden?
-    - Ich brauche die besten Übungen für Stretching.
-
-- intent: ask_exercise_trizeps
-  examples: |
-    - Ich will heute Trizeps trainieren.
-    - Ich möchte meinen Trizeps trainieren
-    - Zeig mir Trizeps Übungen
-    - Was kann ich für meinen Trizeps tun?
-    - Wie bekomme ich einen großen Trizeps?
-    - Trizepsübungen
-    - Trizeps Workout
-    - Hast du Übungen für Trizeps?
-    - Kennst du Übungen für Trizeps?
-    - Trizeps Training
-    - Trizeps Muskulatur
-    - Trizeps
-    - Trizepsmuskel aufbauen
-    - Übungenvorschläge für Trizeps
-    - Ich brauche Übungen für Trizeps
-    - Etwas für Trizeps?
-    - Wie kann man Trizeps verbessern?
-    - Wie kann man Trizeps trainieren?
-    - Wie kann man Trizepsmuskel trainieren?
-    - Wie kann ich meinen Trizeps trainieren?
-    - Ich möchte heute Trizepsmuskeln trainieren.
-    - Ich möchte Trizeps Training machen.
-    - Ich brauche neue Übungen für meinen Trizeps.
-    - Ich will neue Übungen für Trizeps bekommen.
-    - Kannst du mir Übungen für Trizeps finden?
-    - Ich brauche die besten Übungen für Trizeps.
-
-- intent: ask_exercise_bizeps
-  examples: |
-    - Ich möchte meinen Bizeps trainieren
-    - Zeig mir Bizeps Übungen
-    - Mein Bizeps ist zu klein
-    - Wie bekomme ich einen größeren Bizeps?
-    - Bizeps
-    - Bizeps Übungen
-    - Ich will meinen Bizeps trainieren
-    - Meine Arme sind zu dünn
-    - Bizeps Workout
-    - Ich brauche ein Workout für meinen Bizeps
-    - Hast du Übungen für Bizeps?
-    - Bizeps Training
-    - Bizeps Muskulatur
-    - Bizepsmuskel aufbauen
-    - Übungenvorschläge für Bizeps
-    - Ich brauche Übungen für Bizeps
-    - Etwas für Bizeps?
-    - Wie kann man Bizeps verbessern?
-    - Wie kann man Bizeps trainieren?
-    - Wie kann man Bizepsmuskel trainieren?
-    - Wie kann ich meinen Bizeps trainieren?
-    - Ich möchte heute Bizepsmuskeln trainieren.
-    - Ich möchte Bizeps Training machen.
-    - Ich brauche neue Übungen für meinen Bizeps.
-    - Ich will neue Übungen für Bizeps bekommen.
-    - Kannst du mir Übungen für Bizeps finden?
-    - Ich brauche die besten Übungen für Bizeps.
-
-- intent: ask_exercise_brust
-  examples: |
-    - Zeig mir Brust Übungen
-    - Was kann ich für meine Brust tun?
-    - Wie bekomme ich eine größere Brust?
-    - Brust
-    - Brustübungen
-    - Brust Workout
-    - Brustmuskeln
-    - Ich will meine Brustmuskeln trainieren
-    - Ich bin unzufrieden mit meiner Brust
-    - Ich brauche ein Workout für meine Brust
-    - Hast du Übungen für Brust?
-    - Brust Training
-    - Brust Muskulatur
-    - Brustmuskel aufbauen
-    - Übungenvorschläge für Brust
-    - Ich brauche Übungen für Brust
-    - Etwas für Brust?
-    - Wie kann man Brust verbessern?
-    - Wie kann man Brust trainieren?
-    - Wie kann man Brustmuskel trainieren?
-    - Wie kann ich meine Brust trainieren?
-    - Ich möchte heute Brustmuskeln trainieren.
-    - Ich möchte Brust Training machen.
-    - Ich brauche neue Übungen für meine Brust.
-    - Ich will neue Übungen für Brust bekommen.
-    - Kannst du mir Übungen für Brust finden?
-    - Ich brauche die besten Übungen für Brust.
-
-- intent: ask_exercise_rücken
-  examples: |
-    - Ich möchte meinen Rücken trainieren
-    - Zeig mir Rücken Übungen
-    - Was kann ich für meinen Rücken tun?
-    - Wie bekomme ich einen breiteren Rücken?
-    - Rücken
-    - rucken
-    - Rucken
-    - Ruecken
-    - ruecken
-    - Rückenübungen
-    - Rücken Workout
-    - Rückenmuskeln
-    - Ich will meine Rückenmuskeln trainieren
-    - Ich bin unzufrieden mit meinem Rücken
-    - Ich brauche ein Workout für meinen Rücken
-    - Mein Rücken ist nicht breit genug
-    - Hast du Übungen für Rücken?
-    - Rücken Training
-    - Rücken Muskulatur
-    - Rückenmuskel aufbauen
-    - Übungenvorschläge für Rücken
-    - Ich brauche Übungen für Rücken
-    - Etwas für Rücken?
-    - Wie kann man Rücken verbessern?
-    - Wie kann man Rücken trainieren?
-    - Wie kann man Rückenmuskel trainieren?
-    - Wie kann ich meinen Rücken trainieren?
-    - Ich möchte heute Rückenmuskeln trainieren.
-    - Ich möchte Rücken Training machen.
-    - Ich brauche neue Übungen für meinen Rücken.
-    - Ich will neue Übungen für Rücken bekommen.
-    - Kannst du mir Übungen für Rücken finden?
-    - Ich brauche die besten Übungen für Rücken.
-
-- intent: ask_exercise_arme
-  examples: |
-    - starke Arme
-    - Arm
-    - Arm-Workout
-    - arm Übung
-    - Arm training
-    - arme
-    - Unterarme
-    - Oberarme
-    - Ich möchte meine Arme trainieren
-    - Ich möchte starke Arme
-    - Ich will definierte Arm-Muskeln
-    - Wie komme ich zu stärkeren Armen?
-    - Wie bekomme ich am schnellsten eine starke Armmuskulatur?
-
-- intent: ask_exercise_waden
-  examples: |
-    - Waden
-    - Waden Übung
-    - Waden-Workout
-    - Wade
-    - Wade trainieren
-    - Ich möchte, dass meine Waden definierter aussehen
-    - Ich möchte dass meine Waden schlank aussehen
-    - Was kann ich für meine Waden tun?
-    - Ich will definierte Waden
-    - Ich will schlanke Waden
-    - Ich möchte meine Waden trainieren
-
-- intent: ask_exercise_handgelenke
-  examples: |
-    - Handgelenk
-    - Handgelenke
-    - Kannst du mir Übungen speziell für Handgelenke zeigen?
-    - Ich möchte meine Handgelenke trainieren
-    - Ich will meine Handgelenke trainieren
-    - Ich brauche Übungen für Handgelenke
-    - Hast du auch was für die Handgelenke?
-    - Wie sieht es mit Handgelenken aus?
-    - Handgelenke stärken
-    - Handgelenke trainieren
+    - [sixpack]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [Sixpack]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [bauch ubungen]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [bauch training]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [bauch übung]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [bauch übungen]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [bauh]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [bauch]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Ich möchte meinen [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} trainieren
+    - Zeig mir [Bauch Übungen]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Was kann ich für meinen [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} tun?
+    - Wie bekomme ich starken [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}?
+    - [Bauchübungen]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [Bauch Workout]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Kennst du [Übungen für Bauch]{"entity": "muskelgruppe", "value": "Bauch"}?
+    - Ich möchte einen [strafferen Bauch]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Ich möchte ein [Sixpack]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [Sixpack Training]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [Sixpack Übungen]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [sixpack uebungen]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [sixpack ubungen]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [sixpack training]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [sixpack train]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Ich will definierte [Bauchmuskeln]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Wie komme ich zu einem [flacheren Bauch]{"entity": "muskelgruppe", "value": "Bauch"}?
+    - Wie bekomme ich am schnellsten einen [definierten Bauch]{"entity": "muskelgruppe", "value": "Bauch"}?
+    - Ich will heute [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} trainieren.
+    - Hast du Übungen für [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}?
+    - [Bauch Training]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [Bauch Muskulatur]{"entity": "muskelgruppe", "value": "Bauch"}
+    - [Bauchmuskeln]{"entity": "muskelgruppe", "value": "Bauch"} aufbauen
+    - Übungenvorschläge für [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Ich brauche Übungen für [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}
+    - Etwas für [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}?
+    - Wie kann man [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} verbessern?
+    - Wie kann man [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} trainieren?
+    - Wie kann man [Bauchmuskeln]{"entity": "muskelgruppe", "value": "Bauch"} trainieren?
+    - Wie kann ich meinen [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} trainieren?
+    - Ich möchte heute [Bauchmuskeln]{"entity": "muskelgruppe", "value": "Bauch"} trainieren.
+    - Ich möchte [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} Training machen.
+    - Ich brauche neue Übungen für meinen [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}.
+    - Ich will neue Übungen für [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} bekommen.
+    - Kannst du mir Übungen für [Bauch]{"entity": "muskelgruppe", "value": "Bauch"} finden?
+    - Ich brauche die besten Übungen für [Bauch]{"entity": "muskelgruppe", "value": "Bauch"}.
+    - [Beine]{"entity": "muskelgruppe", "value": "Beine"}
+    - [beine]{"entity": "muskelgruppe", "value": "Beine"}
+    - [legs]{"entity": "muskelgruppe", "value": "Beine"}
+    - [leg]{"entity": "muskelgruppe", "value": "Beine"}
+    - [Legs]{"entity": "muskelgruppe", "value": "Beine"}
+    - [Leg]{"entity": "muskelgruppe", "value": "Beine"}
+    - [leg day]{"entity": "muskelgruppe", "value": "Beine"}
+    - [legs training]{"entity": "muskelgruppe", "value": "Beine"}
+    - Ich möchte meine [Beine]{"entity": "muskelgruppe", "value": "Beine"} trainieren
+    - Zeig mir [Beine]{"entity": "muskelgruppe", "value": "Beine"} Übungen
+    - Was kann ich für meine [Beine]{"entity": "muskelgruppe", "value": "Beine"} tun?
+    - Wie bekomme ich starke [Beine]{"entity": "muskelgruppe", "value": "Beine"}?
+    - [Beineübungen]{"entity": "muskelgruppe", "value": "Beine"}
+    - [Beine Workout]{"entity": "muskelgruppe", "value": "Beine"}
+    - Hast du Übungen für [Beine]{"entity": "muskelgruppe", "value": "Beine"}?
+    - Kennst du Übungen für [Beine]{"entity": "muskelgruppe", "value": "Beine"}?
+    - Ich möchte dass meine [Beine]{"entity": "muskelgruppe", "value": "Beine"} besser aussehen
+    - Was kann ich für meine [Beine]{"entity": "muskelgruppe", "value": "Beine"} tun?
+    - Ich will [definierte Beine]{"entity": "muskelgruppe", "value": "Beine"}
+    - Ich will [schlanke Beine]{"entity": "muskelgruppe", "value": "Beine"}
+    - Ich will heute [Beine]{"entity": "muskelgruppe", "value": "Beine"} trainieren.
+    - Hast du Übungen für [Beine]{"entity": "muskelgruppe", "value": "Beine"}?
+    - [Beine Training]{"entity": "muskelgruppe", "value": "Beine"}
+    - [Beine Muskulatur]{"entity": "muskelgruppe", "value": "Beine"}
+    - [Beinemuskeln]{"entity": "muskelgruppe", "value": "Beine"} aufbauen
+    - Übungenvorschläge für [Beine]{"entity": "muskelgruppe", "value": "Beine"}
+    - Ich brauche Übungen für [Beine]{"entity": "muskelgruppe", "value": "Beine"}
+    - Etwas für [Beine]{"entity": "muskelgruppe", "value": "Beine"}?
+    - Wie kann man [Beine]{"entity": "muskelgruppe", "value": "Beine"} verbessern?
+    - Wie kann man [Beine]{"entity": "muskelgruppe", "value": "Beine"} trainieren?
+    - Wie kann man [Beinemuskeln]{"entity": "muskelgruppe", "value": "Beine"} trainieren?
+    - Wie kann ich meine [Beine]{"entity": "muskelgruppe", "value": "Beine"} trainieren?
+    - Ich möchte heute [Beinemuskeln]{"entity": "muskelgruppe", "value": "Beine"} trainieren.
+    - Ich möchte [Beine Training]{"entity": "muskelgruppe", "value": "Beine"} machen.
+    - Ich brauche neue Übungen für meine [Beine]{"entity": "muskelgruppe", "value": "Beine"}.
+    - Ich will neue Übungen für [Beine]{"entity": "muskelgruppe", "value": "Beine"} bekommen.
+    - Kannst du mir Übungen für [Beine]{"entity": "muskelgruppe", "value": "Beine"} finden?
+    - Ich brauche die besten Übungen für [Beine]{"entity": "muskelgruppe", "value": "Beine"}.
+    - [Po]{"entity": "muskelgruppe", "value": "Po"}
+    - [po]{"entity": "muskelgruppe", "value": "Po"}
+    - [pobacken]{"entity": "muskelgruppe", "value": "Po"}
+    - [pobacke]{"entity": "muskelgruppe", "value": "Po"}
+    - [hintern]{"entity": "muskelgruppe", "value": "Po"}
+    - [Pobacken]{"entity": "muskelgruppe", "value": "Po"}
+    - [Pobacke]{"entity": "muskelgruppe", "value": "Po"}
+    - [Hintern]{"entity": "muskelgruppe", "value": "Po"}
+    - [arsch]{"entity": "muskelgruppe", "value": "Po"}
+    - [Arsch]{"entity": "muskelgruppe", "value": "Po"}
+    - [ass]{"entity": "muskelgruppe", "value": "Po"}
+    - [Ass]{"entity": "muskelgruppe", "value": "Po"}
+    - [hinterteil]{"entity": "muskelgruppe", "value": "Po"}
+    - [po ubungen]{"entity": "muskelgruppe", "value": "Po"}
+    - [po uebungen]{"entity": "muskelgruppe", "value": "Po"}
+    - [po übungen]{"entity": "muskelgruppe", "value": "Po"}
+    - [po training]{"entity": "muskelgruppe", "value": "Po"}
+    - [Hinterteil]{"entity": "muskelgruppe", "value": "Po"}
+    - Zeig mir [Po Übungen]{"entity": "muskelgruppe", "value": "Po"}
+    - Was kann ich für meinen [Po]{"entity": "muskelgruppe", "value": "Po"} tun?
+    - Wie bekomme ich einen [runden Po]{"entity": "muskelgruppe", "value": "Po"}?
+    - [Poübungen]{"entity": "muskelgruppe", "value": "Po"}
+    - [Po Workout]{"entity": "muskelgruppe", "value": "Po"}
+    - [Pomuskeln]{"entity": "muskelgruppe", "value": "Po"}
+    - Ich will meinen [Po]{"entity": "muskelgruppe", "value": "Po"} trainieren
+    - Ich bin unzufrieden mit meinem [Po]{"entity": "muskelgruppe", "value": "Po"}
+    - Ich brauche ein Workout für meinen [Po]{"entity": "muskelgruppe", "value": "Po"}
+    - Mein [Po]{"entity": "muskelgruppe", "value": "Po"} ist nicht rund genug
+    - Hast du Übungen für [Po]{"entity": "muskelgruppe", "value": "Po"}?
+    - Kannst du mir Übungen speziell für meinen [Po]{"entity": "muskelgruppe", "value": "Po"} zeigen?
+    - [Booty]{"entity": "muskelgruppe", "value": "Po"}
+    - Ich will einen [größeren Po]{"entity": "muskelgruppe", "value": "Po"}
+    - Ich will einen [runderen Po]{"entity": "muskelgruppe", "value": "Po"}
+    - Ich will meinen [Booty]{"entity": "muskelgruppe", "value": "Po"} definieren
+    - Ich will heute [Po]{"entity": "muskelgruppe", "value": "Po"} trainieren.
+    - Hast du Übungen für [Po]{"entity": "muskelgruppe", "value": "Po"}?
+    - [Po Training]{"entity": "muskelgruppe", "value": "Po"}
+    - [booty]{"entity": "muskelgruppe", "value": "Po"}
+    - [booty training]{"entity": "muskelgruppe", "value": "Po"}
+    - [Booty Training]{"entity": "muskelgruppe", "value": "Po"}
+    - [Po Muskulatur]{"entity": "muskelgruppe", "value": "Po"}
+    - [Pomuskeln]{"entity": "muskelgruppe", "value": "Po"} aufbauen
+    - Übungenvorschläge für [Po]{"entity": "muskelgruppe", "value": "Po"}
+    - Ich brauche Übungen für [Po]{"entity": "muskelgruppe", "value": "Po"}
+    - Etwas für [Po]{"entity": "muskelgruppe", "value": "Po"}?
+    - Wie kann man [Po]{"entity": "muskelgruppe", "value": "Po"} verbessern?
+    - Wie kann man [Po]{"entity": "muskelgruppe", "value": "Po"} trainieren?
+    - Wie kann man [Pomuskeln]{"entity": "muskelgruppe", "value": "Po"} trainieren?
+    - Wie kann ich meinen [Booty]{"entity": "muskelgruppe", "value": "Po"} trainieren?
+    - Ich möchte heute [Pomuskeln]{"entity": "muskelgruppe", "value": "Po"} trainieren.
+    - Ich möchte [Po Training]{"entity": "muskelgruppe", "value": "Po"} machen.
+    - Ich brauche neue Übungen für meinen [Po]{"entity": "muskelgruppe", "value": "Po"}.
+    - Ich will neue Übungen für [Po]{"entity": "muskelgruppe", "value": "Po"} bekommen.
+    - Kannst du mir Übungen für [Booty]{"entity": "muskelgruppe", "value": "Po"} finden?
+    - Ich brauche die besten Übungen für [Po]{"entity": "muskelgruppe", "value": "Po"}.
+    - Ich will heute [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} trainieren.
+    - Ich möchte meinen [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} trainieren
+    - Zeig mir [Nacken Übungen]{"entity": "muskelgruppe", "value": "Nacken"}
+    - Was kann ich für meinen [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} tun?
+    - Wie bekomme ich [starken Nacken]{"entity": "muskelgruppe", "value": "Nacken"}?
+    - [Nackenübungen]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [Nacken Workout]{"entity": "muskelgruppe", "value": "Nacken"}
+    - Hast du Übungen für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}?
+    - Kennst du Übungen für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}?
+    - [Nacken Training]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [Nacken Muskulatur]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [Nackenmuskeln]{"entity": "muskelgruppe", "value": "Nacken"} aufbauen
+    - [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}
+    - Übungenvorschläge für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}
+    - Ich brauche Übungen für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [nacken]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [naken]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [nacen]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [neck]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [Neck]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [nek]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [nec]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [Naken]{"entity": "muskelgruppe", "value": "Nacken"}
+    - [Nacen]{"entity": "muskelgruppe", "value": "Nacken"}
+    - Etwas für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}?
+    - Wie kann man [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} verbessern?
+    - Wie kann man [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} trainieren?
+    - Wie kann man [Nackenmuskeln]{"entity": "muskelgruppe", "value": "Nacken"} trainieren?
+    - Wie kann ich meinen [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} trainieren?
+    - Ich möchte heute [Nackenmuskeln]{"entity": "muskelgruppe", "value": "Nacken"} trainieren.
+    - Ich möchte [Nacken Training]{"entity": "muskelgruppe", "value": "Nacken"} machen.
+    - Ich brauche neue Übungen für meinen [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}.
+    - Ich will neue Übungen für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} bekommen.
+    - Kannst du mir Übungen für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"} finden?
+    - Ich brauche die besten Übungen für [Nacken]{"entity": "muskelgruppe", "value": "Nacken"}.
+    - Ich will heute [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} trainieren.
+    - Ich möchte meine [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} trainieren
+    - Zeig mir [Schultern Übungen]{"entity": "muskelgruppe", "value": "Schultern"}
+    - [schultern]{"entity": "muskelgruppe", "value": "Schultern"}
+    - [schulter]{"entity": "muskelgruppe", "value": "Schultern"}
+    - Was kann ich für meine [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} tun?
+    - Wie bekomme ich [breite Schultern]{"entity": "muskelgruppe", "value": "Schultern"}?
+    - [Schulternübungen]{"entity": "muskelgruppe", "value": "Schultern"}
+    - [Schultern Workout]{"entity": "muskelgruppe", "value": "Schultern"}
+    - Hast du Übungen für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}?
+    - Kennst du Übungen für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}?
+    - [Schultern Training]{"entity": "muskelgruppe", "value": "Schultern"}
+    - [Schultern Muskulatur]{"entity": "muskelgruppe", "value": "Schultern"}
+    - [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}
+    - [Schulternmuskeln]{"entity": "muskelgruppe", "value": "Schultern"} aufbauen
+    - Übungenvorschläge für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}
+    - Ich brauche Übungen für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}
+    - Etwas für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}?
+    - Wie kann man [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} verbessern?
+    - Wie kann man [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} trainieren?
+    - Wie kann man [Schulternmuskeln]{"entity": "muskelgruppe", "value": "Schultern"} trainieren?
+    - Wie kann ich meinen [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} trainieren?
+    - Ich möchte heute [Schulternmuskeln]{"entity": "muskelgruppe", "value": "Schultern"} trainieren.
+    - Ich möchte [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} Training machen.
+    - Ich brauche neue Übungen für meine [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}.
+    - Ich will neue Übungen für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} bekommen.
+    - Kannst du mir Übungen für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"} finden?
+    - Ich brauche die besten Übungen für [Schultern]{"entity": "muskelgruppe", "value": "Schultern"}.
+    - Ich will heute [Stretching]{"entity": "muskelgruppe", "value": "Stretching"} machen.
+    - Ich möchte meinen Körper [entspannen]{"entity": "muskelgruppe", "value": "Stretching"}.
+    - Ich möchte meine Muskeln [dehnen]{"entity": "muskelgruppe", "value": "Stretching"}.
+    - [Dehnen Übungen]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [stretching]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [dehnen]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [Stretching Übungen]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [Stretching]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [Dehnen]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Zeig mir [Stretching Übungen]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Zeig mir [Dehnen Übungen]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Was kann ich zum [Dehnen]{"entity": "muskelgruppe", "value": "Stretching"} tun?
+    - Schick mir [Stretching Workout]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [Stretchingübungen]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [Stretching Workout]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [Dehnen workout]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Hast du Übungen zum [Dehnen]{"entity": "muskelgruppe", "value": "Stretching"}?
+    - Kennst du Übungen für [Stretching]{"entity": "muskelgruppe", "value": "Stretching"}?
+    - [Stretching Training]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [Dehnen Training]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Übungenvorschläge für [Stretching]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Ich brauche Übungen für [Stretching]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Etwas für [Stretching]{"entity": "muskelgruppe", "value": "Stretching"}?
+    - Etwas für [Dehnen]{"entity": "muskelgruppe", "value": "Stretching"}?
+    - Wie kann man [Flexibilität]{"entity": "muskelgruppe", "value": "Stretching"} des Körpers verbessern?
+    - [Flexibilität]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [flexibel]{"entity": "muskelgruppe", "value": "Stretching"}
+    - [flexibel werden]{"entity": "muskelgruppe", "value": "Stretching"}
+    - ich will [flexibel sein]{"entity": "muskelgruppe", "value": "Stretching"}
+    - Wie kann man [Muskeln dehnen]{"entity": "muskelgruppe", "value": "Stretching"}?
+    - Wie kann man [Stretching]{"entity": "muskelgruppe", "value": "Stretching"} machen?
+    - Wie kann ich meinen Körper [flexibler]{"entity": "muskelgruppe", "value": "Stretching"} machen?
+    - Ich möchte heute [dehnen]{"entity": "muskelgruppe", "value": "Stretching"}.
+    - Ich möchte [Stretching Training]{"entity": "muskelgruppe", "value": "Stretching"} machen.
+    - Ich brauche neue Übungen für [Stretching Training]{"entity": "muskelgruppe", "value": "Stretching"}.
+    - Ich will neue Übungen für [Stretching]{"entity": "muskelgruppe", "value": "Stretching"} bekommen.
+    - Kannst du mir Übungen für [Stretching]{"entity": "muskelgruppe", "value": "Stretching"} finden?
+    - Ich brauche die besten Übungen für [Stretching]{"entity": "muskelgruppe", "value": "Stretching"}.
+    - Ich will heute [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} trainieren.
+    - Ich möchte meinen [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} trainieren
+    - Ich möchte meinen [trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} trainieren
+    - [trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - Zeig mir [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} Übungen
+    - Was kann ich für meinen [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} tun?
+    - Wie bekomme ich einen großen [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}?
+    - [Trizepsübungen]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - [Trizeps Workout]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - Hast du Übungen für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}?
+    - Kennst du Übungen für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}?
+    - [Trizeps Training]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - [Trizeps Muskulatur]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - [Trizepsmuskel]{"entity": "muskelgruppe", "value": "Trizeps"} aufbauen
+    - Übungenvorschläge für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - Ich brauche Übungen für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}
+    - Etwas für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}?
+    - Wie kann man [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} verbessern?
+    - Wie kann man [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} trainieren?
+    - Wie kann man [Trizepsmuskel]{"entity": "muskelgruppe", "value": "Trizeps"} trainieren?
+    - Wie kann ich meinen [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} trainieren?
+    - Ich möchte heute [Trizepsmuskeln]{"entity": "muskelgruppe", "value": "Trizeps"} trainieren.
+    - Ich möchte [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} Training machen.
+    - Ich brauche neue Übungen für meinen [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}.
+    - Ich will neue Übungen für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} bekommen.
+    - Kannst du mir Übungen für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"} finden?
+    - Ich brauche die besten Übungen für [Trizeps]{"entity": "muskelgruppe", "value": "Trizeps"}.
+    - Ich möchte meinen [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} trainieren
+    - Zeig mir [Bizeps Übungen]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - [bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - [bizeps training]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - Mein [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} ist zu klein
+    - Wie bekomme ich einen größeren [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}?
+    - [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} Übungen
+    - Ich will meinen [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} trainieren
+    - [Bizeps Workout]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - Ich brauche ein Workout für meinen [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - Hast du Übungen für [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}?
+    - [Bizeps Training]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - [Bizeps Muskulatur]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - [Bizepsmuskel]{"entity": "muskelgruppe", "value": "Bizeps"} aufbauen
+    - Übungenvorschläge für [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - Ich brauche Übungen für [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}
+    - Etwas für [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}?
+    - Wie kann man [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} verbessern?
+    - Wie kann man [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} trainieren?
+    - Wie kann man [Bizepsmuskel]{"entity": "muskelgruppe", "value": "Bizeps"} trainieren?
+    - Wie kann ich meinen [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} trainieren?
+    - Ich möchte heute [Bizepsmuskeln]{"entity": "muskelgruppe", "value": "Bizeps"} trainieren.
+    - Ich möchte [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} Training machen.
+    - Ich brauche neue Übungen für meinen [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}.
+    - Ich will neue Übungen für [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} bekommen.
+    - Kannst du mir Übungen für [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"} finden?
+    - Ich brauche die besten Übungen für [Bizeps]{"entity": "muskelgruppe", "value": "Bizeps"}.
+    - Zeig mir [Brust]{"entity": "muskelgruppe", "value": "Brust"} Übungen
+    - [brust]{"entity": "muskelgruppe", "value": "Brust"}
+    - [brust training]{"entity": "muskelgruppe", "value": "Brust"}
+    - [brust ubung]{"entity": "muskelgruppe", "value": "Brust"}
+    - [brust uebung]{"entity": "muskelgruppe", "value": "Brust"}
+    - [brust uebungen]{"entity": "muskelgruppe", "value": "Brust"}
+    - [brust übung]{"entity": "muskelgruppe", "value": "Brust"}
+    - [brust übungen]{"entity": "muskelgruppe", "value": "Brust"}
+    - Was kann ich für meine [Brust]{"entity": "muskelgruppe", "value": "Brust"} tun?
+    - Wie bekomme ich eine größere [Brust]{"entity": "muskelgruppe", "value": "Brust"}?
+    - [Brust]{"entity": "muskelgruppe", "value": "Brust"}
+    - [Brustübungen]{"entity": "muskelgruppe", "value": "Brust"}
+    - [Brust Workout]{"entity": "muskelgruppe", "value": "Brust"}
+    - [Brustmuskeln]{"entity": "muskelgruppe", "value": "Brust"}
+    - Ich will meine [Brustmuskeln]{"entity": "muskelgruppe", "value": "Brust"} trainieren
+    - Ich bin unzufrieden mit meiner [Brust]{"entity": "muskelgruppe", "value": "Brust"}
+    - Ich brauche ein Workout für meine [Brust]{"entity": "muskelgruppe", "value": "Brust"}
+    - Hast du Übungen für [Brust]{"entity": "muskelgruppe", "value": "Brust"}?
+    - [Brust Training]{"entity": "muskelgruppe", "value": "Brust"}
+    - [Brust Muskulatur]{"entity": "muskelgruppe", "value": "Brust"}
+    - [Brustmuskel] aufbauen
+    - Übungenvorschläge für [Brust]{"entity": "muskelgruppe", "value": "Brust"}
+    - Ich brauche Übungen für [Brust]{"entity": "muskelgruppe", "value": "Brust"}
+    - Etwas für [Brust]{"entity": "muskelgruppe", "value": "Brust"}?
+    - Wie kann man [Brust]{"entity": "muskelgruppe", "value": "Brust"} verbessern?
+    - Wie kann man [Brust]{"entity": "muskelgruppe", "value": "Brust"} trainieren?
+    - Wie kann man [Brustmuskel]{"entity": "muskelgruppe", "value": "Brust"} trainieren?
+    - Wie kann ich meine [Brust]{"entity": "muskelgruppe", "value": "Brust"} trainieren?
+    - Ich möchte heute [Brustmuskeln]{"entity": "muskelgruppe", "value": "Brust"} trainieren.
+    - Ich möchte [Brust]{"entity": "muskelgruppe", "value": "Brust"} Training machen.
+    - Ich brauche neue Übungen für meine [Brust]{"entity": "muskelgruppe", "value": "Brust"}.
+    - Ich will neue Übungen für [Brust]{"entity": "muskelgruppe", "value": "Brust"} bekommen.
+    - Kannst du mir Übungen für [Brust]{"entity": "muskelgruppe", "value": "Brust"} finden?
+    - Ich brauche die besten Übungen für [Brust]{"entity": "muskelgruppe", "value": "Brust"}.
+    - Ich möchte meinen [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} trainieren
+    - Zeig mir [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} Übungen
+    - Was kann ich für meinen [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} tun?
+    - Wie bekomme ich einen breiteren [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}?
+    - [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [rucken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [Rüken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [Rücen]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [rücken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [Rucken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [Ruecken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [ruecken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [Rückenübungen]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [Rücken Workout]{"entity": "muskelgruppe", "value": "Rücken"}
+    - [Rückenmuskeln]{"entity": "muskelgruppe", "value": "Rücken"}
+    - Ich will meine [Rückenmuskeln]{"entity": "muskelgruppe", "value": "Rücken"} trainieren
+    - Ich bin unzufrieden mit meinem [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - Ich brauche ein Workout für meinen [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - Mein [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} ist nicht breit genug
+    - Hast du Übungen für [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}?
+    - [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} Training
+    - [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} Muskulatur
+    - [Rückenmuskel]{"entity": "muskelgruppe", "value": "Rücken"} aufbauen
+    - Übungenvorschläge für [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - Ich brauche Übungen für [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}
+    - Etwas für [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}?
+    - Wie kann man [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} verbessern?
+    - Wie kann man [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} trainieren?
+    - Wie kann man [Rückenmuskel]{"entity": "muskelgruppe", "value": "Rücken"} trainieren?
+    - Wie kann ich meinen [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} trainieren?
+    - Ich möchte heute [Rückenmuskeln]{"entity": "muskelgruppe", "value": "Rücken"} trainieren.
+    - Ich möchte [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} Training machen.
+    - Ich brauche neue Übungen für meinen [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}.
+    - Ich will neue Übungen für [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} bekommen.
+    - Kannst du mir Übungen für [Rücken]{"entity": "muskelgruppe", "value": "Rücken"} finden?
+    - Ich brauche die besten Übungen für [Rücken]{"entity": "muskelgruppe", "value": "Rücken"}.
+    - starke [Arme]{"entity": "muskelgruppe", "value": "Arme"}
+    - [Arm]{"entity": "muskelgruppe", "value": "Arme"}
+    - [Arm-Workout]{"entity": "muskelgruppe", "value": "Arme"}
+    - [Arm Übung]{"entity": "muskelgruppe", "value": "Arme"}
+    - [Arm training]{"entity": "muskelgruppe", "value": "Arme"}
+    - [arme]{"entity": "muskelgruppe", "value": "Arme"}
+    - [arm]{"entity": "muskelgruppe", "value": "Arme"}
+    - [arms]{"entity": "muskelgruppe", "value": "Arme"}
+    - Ich möchte meine [Arme]{"entity": "muskelgruppe", "value": "Arme"} trainieren
+    - Ich möchte starke [Arme]{"entity": "muskelgruppe", "value": "Arme"}
+    - Ich will definierte [Arm-Muskeln]{"entity": "muskelgruppe", "value": "Arme"}
+    - Wie komme ich zu stärkeren [Armen]{"entity": "muskelgruppe", "value": "Arme"}?
+    - Wie bekomme ich am schnellsten eine starke [Armmuskulatur]{"entity": "muskelgruppe", "value": "Arme"}?
+    - [Waden]{"entity": "muskelgruppe", "value": "Waden"}
+    - [waden]{"entity": "muskelgruppe", "value": "Waden"}
+    - [wade]{"entity": "muskelgruppe", "value": "Waden"}
+    - [Waden Übung]{"entity": "muskelgruppe", "value": "Waden"}
+    - [Waden-Workout]{"entity": "muskelgruppe", "value": "Waden"}
+    - [Wade]{"entity": "muskelgruppe", "value": "Waden"}
+    - [Wade]{"entity": "muskelgruppe", "value": "Waden"} trainieren
+    - Ich möchte, dass meine [Waden]{"entity": "muskelgruppe", "value": "Waden"} definierter aussehen
+    - Ich möchte dass meine [Waden]{"entity": "muskelgruppe", "value": "Waden"} schlank aussehen
+    - Was kann ich für meine [Waden]{"entity": "muskelgruppe", "value": "Waden"} tun?
+    - Ich will definierte [Waden]{"entity": "muskelgruppe", "value": "Waden"}
+    - Ich will schlanke [Waden]{"entity": "muskelgruppe", "value": "Waden"}
+    - Ich möchte meine [Waden]{"entity": "muskelgruppe", "value": "Waden"} trainieren
+    - [Handgelenk]{"entity": "muskelgruppe", "value": "Handgelenk"}
+    - [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"}
+    - [handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"}
+    - [handgelenk]{"entity": "muskelgruppe", "value": "Handgelenk"}
+    - Kannst du mir Übungen speziell für [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"} zeigen?
+    - Ich möchte meine [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"} trainieren
+    - Ich will meine [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"} trainieren
+    - Ich brauche Übungen für [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"}
+    - Hast du auch was für die [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"}?
+    - Wie sieht es mit [Handgelenken]{"entity": "muskelgruppe", "value": "Handgelenk"} aus?
+    - [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"} stärken
+    - [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenk"} trainieren
 
 
 - intent: need_help
