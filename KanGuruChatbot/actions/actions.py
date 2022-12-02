@@ -47,30 +47,6 @@ class ActionUserName(Action):
 
         return []
 
-class ActionMVG(Action):
-
-     def name(self) -> Text:
-         return "action_get_travel_time"
-
-     def run(self, dispatcher, tracker, domain):
-        from_station = tracker.get_slot("from_station")
-        to_station = tracker.get_slot("to_station")
-        if not from_station or not to_station :
-            dispatcher.utter_message("Diese Stationen habe ich nicht erkannt!")
-        else:
-            result = json.loads(mvg.handle_route(from_station, to_station))
-            print(result)
-            if "error" in result:
-                print("FEHLER!!!!!!!")
-                dispatcher.utter_message("Sorry! Ich habe da mindestens eine Station nicht erkannt!")
-            else:
-                origin = result["from"]
-                destination = result["to"]
-                time_needed = result["time_needed"]
-                dispatcher.utter_message("Du brauchst exakt: {} Minuten von {} nach {}. Gute Reise!".format(time_needed, origin, destination))
-
-        return []
-
 class ActionYouTubeVideos(Action):
     def name(self) -> Text:
         return "action_send_youtube_video"

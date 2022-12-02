@@ -266,15 +266,6 @@ nlu:
     - Wie heisse ich?
     - Erinnerst du dich an meinen Namen?
 
-- intent: ask_travel_time
-  examples: |
-    - Sag mir wie lange es von [Holzapfelkreuth](from_station) zur [Hochschule Muenchen](to_station) dauert.
-    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zum [Olympiazentrum](to_station)?
-    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zum [Heimeranplatz](to_station)?
-    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zur [Poccistrasse](to_station)?
-    - Wie lange brauche ich von der [Hochschule Muenchen](from_station) zum [Odeonsplatz](to_station)?
-    - [Hochschule München](from_station) nach [Garching](to_station)
-
 - intent: want_to_train
   examples: |
     - Ich will heute trainieren
