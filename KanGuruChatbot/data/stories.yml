@@ -1,126 +1,22 @@
 version: "3.0"
 
 stories:
-- story: happy path 1
+- story: happy path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
-  - action: utter_ask_want_to_train
-  - intent: deny
-  - action: utter_goodbye
-
-- story: happy path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - action: utter_ask_want_to_train
-  - intent: affirm
-  - action: utter_ask_need_help
-  - intent: affirm
-  - action: utter_what_exactly_train
-
-- story: happy path 3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-  - action: utter_ask_want_to_train
-  - intent: affirm
-  - action: utter_ask_need_help
-  - intent: deny
-  - action: utter_have_good_training
 
 
-- story: sad path 1
+- story: sad path
   steps:
   - intent: greet
   - action: utter_greet
   - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-  - action: utter_ask_want_to_train
-  - intent: deny
-  - action: utter_goodbye
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
   - action: utter_sad
-  - action: utter_ask_want_to_train
-  - intent: deny
-  - action: utter_goodbye
-
-- story: sad path 3
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
   - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-  - action: utter_ask_want_to_train
-  - intent: affirm
-  - action: utter_ask_need_help
-  - intent: affirm
-  - action: utter_what_exactly_train
 
-- story: sad path 4
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_sad
-  - action: utter_ask_want_to_train
-  - intent: affirm
-  - action: utter_ask_need_help
-  - intent: affirm
-  - action: utter_what_exactly_train
-
-- story: sad path 5
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-  - action: utter_ask_want_to_train
-  - intent: affirm
-  - action: utter_ask_need_help
-  - intent: deny
-  - action: utter_have_good_training
-
-- story: sad path 6
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_sad
-  - action: utter_ask_want_to_train
-  - intent: affirm
-  - action: utter_ask_need_help
-  - intent: deny
-  - action: utter_have_good_training
 
 - story: greet_with_name
   steps:
@@ -130,108 +26,68 @@ stories:
   - action: action_store_name
   - action: utter_greet_with_name
 
+
 - story: greet_with_name2
   steps:
   - intent: greet
-  - action: action_store_name
   - action: utter_greet_ask_name
   - intent: my_name_is
+  - action: action_store_name
   - action: utter_greet_with_name
+
 
 - story: Ask the bot if it remembers user's name
   steps:
   - intent: bot_challenge_name
   - action: action_get_name
 
-- story: Ask for help
+
+- story: Ask for a training plan
   steps:
   - intent: want_to_train
-  - action: utter_ask_need_help
-  - intent: affirm
-  - action: utter_what_exactly_train
-  
-- story: Ask for Nacken exercises
-  steps:
-  - intent: ask_exercise_nacken
-  - action: utter_exercise_nacken
-
-- story: Ask for Schultern exercises
-  steps:
-  - intent: ask_exercise_schultern
-  - action: utter_exercise_schultern
-
-- story: Ask for Trizeps exercises
-  steps:
-  - intent: ask_exercise_trizeps
-  - action: utter_exercise_trizeps
-
-- story: Ask for Bauch exercises
-  steps:
-  - intent: ask_exercise_bauch
-  - action: utter_exercise_bauch
-
-- story: Ask for Beine exercises
-  steps:
-  - intent: ask_exercise_beine
-  - action: utter_exercise_beine
-
-- story: Ask for Po exercises
-  steps:
-  - intent: ask_exercise_po
-  - action: utter_exercise_po
-
-- story: Ask for Bizeps exercises
-  steps:
-  - intent: ask_exercise_bizeps
-  - action: utter_exercise_bizeps
-
-- story: Ask for Brust exercises
-  steps:
-  - intent: ask_exercise_brust
-  - action: utter_exercise_brust
-
-- story: Ask for Rücken exercises
-  steps:
-  - intent: ask_exercise_rücken
-  - action: utter_exercise_rücken
-
-- story: Ask for Arme exercises
-  steps:
-  - intent: ask_exercise_arme
-  - action: utter_exercise_arme
-
-- story: Ask for Waden exercises
-  steps:
-  - intent: ask_exercise_waden
-  - action: utter_exercise_waden
-
-- story: Ask for Handgelenke exercises
-  steps:
-  - intent: ask_exercise_handgelenke
-  - action: utter_exercise_handgelenke
-
-
-- story: Offer help with exercises 1
-  steps:
-  - intent: want_to_train
-  - action: utter_ask_need_help
-  - intent: affirm
   - action: utter_what_exactly_train
 
-- story: Offer help with exercises 2
+
+- story: Ask for exercise with muskelgruppe 1
   steps:
-  - intent: want_to_train
-  - action: utter_ask_need_help
-  - intent: deny
+  - intent: ask_exercise_muskelgruppe
+  - action: action_give_video0
   - action: utter_have_good_training
+  - intent: one_more_video
+  - action: action_give_video1
+  - action: utter_have_good_training
+  - intent: one_more_video
+  - action: action_give_video2
+  - action: utter_have_good_training
+  - intent: one_more_video
+  - action: utter_no_videos_left
+
+- story: Ask for exercise with muskelgruppe 2
+  steps:
+  - intent: ask_exercise_muskelgruppe
+  - action: action_give_video0
+  - action: utter_have_good_training
+  - or:
+    - intent: deny
+    - intent: mood_unhappy
+  - action: utter_one_more_video
+  - or:
+    - intent: deny
+    - intent: mood_unhappy
+  - action: action_give_video1
+  - action: utter_have_good_training
+  - or:
+    - intent: deny
+    - intent: mood_unhappy
+  - action: action_give_video2
+  - action: utter_have_good_training
+  - or:
+    - intent: deny
+    - intent: mood_unhappy
+    - intent: one_more_video
+  - action: utter_no_videos_left
 
 - story: User doesn't want to train today
   steps:
   - intent: lazy_today
   - action: utter_motivate
-
-- story: User asks for stretching
-  steps:
-  - intent: ask_exercise_stretching
-  - action: utter_exercise_stretching
-
