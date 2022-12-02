@@ -230,13 +230,6 @@ stories:
   - intent: deny
   - action: utter_have_good_training
 
-- story: User asks for help
-  steps:
-  - intent: need_help
-  - action: utter_ask_need_help
-  - intent: affirm
-  - action: utter_what_exactly_train
-
 - story: User doesn't want to train today
   steps:
   - intent: lazy_today

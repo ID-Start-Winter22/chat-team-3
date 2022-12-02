@@ -28,8 +28,8 @@ intents:
   - want_to_train
   - lazy_today
   - had_training
-  - need_help
   - thanks
+  - what_can_you_do
 
 actions:
   - action_store_name
@@ -73,6 +73,9 @@ responses:
   - text: "Was wollen wir heute definieren?"
   - text: "Mit welcher Muskelgruppe soll ich dir heute helfen?"
   - text: "An welcher Muskelgruppe willst du heute arbeiten?"
+  - text: "Welche Muskeln trainieren wir heute?"
+  - text: "Was möchtest du trainieren?"
+
 
   utter_ask_want_to_train:
   - text: "Hast du heute Lust auf ein Training?"
@@ -81,16 +84,23 @@ responses:
   - text: "Hast du Lust, an deinem Körper zu arbeiten?"
   - text: "Willst du deinen Körper weiter in die beste Form bringen?"
   - text: "Willst du weiter deine Disziplin stärken und heute trainieren?"
+  - text: "Zeit für ein Workout! Bist du dabei?" 
+  - text: "Bist du bereit für dein Workout?"
+  - text: "Willst du heute trainieren und noch fitter werden?"
+
 
 
   utter_ask_need_help:
   - text: "Kann ich dir helfen?"
   - text: "Darf ich einen Tipp geben?"
   - text: "Willst du einen Vorschlag von mir haben?"
-  - text: "Brauchst du meine Hilfe bei der Suche nach ein paar effektiven Übungen?"
+  - text: "Brauchst du meine Hilfe?"
   - text: "Soll ich dir helfen?"
-  - text: "Willst du, dass ich dir helfe, gute Übungen zu finden?"
+  - text: "Willst du, dass ich dir helfe?"
   - text: "Wollen wir zusammenarbeiten?"
+  - text: "Brauchst du Unterstützung?" 
+  - text: "Kann ich dir behilflich sein?"
+
 
 
   utter_praise:
@@ -99,9 +109,13 @@ responses:
   - text: "Wow! Bald wirst du ein Profi! 🤩👏🏻"
   - text: "Du wirst jeden Tag stärker!"
   - text: "Stabil! Weiter so! 🔥👊🏻"
-  - text: "Das kann dir keiner mehr nehmen!"
-  - text: "Zieh durch, du machst das super!"
-  - text: "Jeden Tag, wo du trainierst, machst du einen Schritt in die richtige Richtung!"
+  - text: "Das kann dir keiner mehr nehmen! 😎"
+  - text: "Zieh durch, du machst das super! 🚀"
+  - text: "Jeden Tag, an dem du trainierst, machst du einen Schritt in die richtige Richtung!"
+  - text: "Du kannst stolz auf dich sein! 😎" 
+  - text: "Mir gefällt deine Disziplin! Sehr gut! 💪"
+  - text: "Genau so will ich das sehen, du Maschine! 🔥"
+
 
 
   utter_exercise_nacken:
@@ -217,6 +231,10 @@ responses:
   - text: "Servus Erdnuss, wie ist heute deine Mood?"
   - text: "Hello, und wie ist die Stimmung?"
   - text: "Heyho, wie geht's, wie steht's?"
+  - text: "Hey, alles klar bei dir?" 
+  - text: "Freut mich, dich zu sehen! Wie geht's dir heute?"
+  - text: "Hallo, schön dich zu sehen. Wie geht es dir?"
+
 
   utter_gerne:
   - text: "Sehr gerne 😜"
@@ -231,11 +249,12 @@ responses:
   - text: "Dafür bin ich doch da Sportler 🤟🏻"
 
   utter_cheer_up:
-  - text: "Lass den Kopf nicht hängen. Schau mal:"
-    image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F402298179194919860%2F&psig=AOvVaw1D3mR7lz22VIGgrs9BaV_S&ust=1668807483015000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCy4buWtvsCFQAAAAAdAAAAABAJ"
+  - text: "Lass den Kopf nicht hängen!"
   - text: "Morgen wird ein besserer Tag. Kopf hoch!"
   - text: "Man kann nicht immer gut drauf sein, aber es wird wieder anders!"
   - text: "Morgen sieht die Welt wieder ganz anders aus."
+  - text: "Das wird schon wieder 😌"
+
 
   utter_motivate:
   - text: "Motivation ist das, was dich starten lässt. Gewohnheit ist das, was dich weitermachen lässt 💪🏼"
@@ -246,12 +265,19 @@ responses:
   - text: "Wer kämpft, kann verlieren. Wer nicht kämpft, hat schon verloren 😌"
   - text: "Wenn du alles gibst, kannst du dir nichts vorwerfen 😏"
   - text: "Deine größte Herausforderung ist nicht jemand anderes. Es sind die Schmerzen in deinen Beinen und die innere Stimme, sie sagt „Ich kann nicht“ – hör nicht auf sie. Du machst einfach weiter und dann hörst du, wie die Stimme flüstert „Ich kann“ - und dann stellst du fest, dass du ein anderer Mensch bist, als du es eben noch dachtest 💪🏻"
+  - text: "Gib nicht auf! Wer kämpft, kann verlieren. Wer nicht kämpft, hat schon verloren." 
+  - text: "Du schaffst das! Dein Körper kann alles, es ist nur dein Gehirn, das du überzeugen musst."
+  - text: "Zieh weiter durch! Ich glaube an dich!"
 
 
   utter_did_that_help:
   - text: "Hilft das?"
   - text: "Bringt dir das was?"
   - text: "Passt das für dich?"
+  - text: "Ist das okay?" 
+  - text: "Hat dir das weitergeholfen?"
+  - text: "Kannst du damit etwas anfangen?"
+
 
 
   utter_have_good_training:
@@ -261,6 +287,10 @@ responses:
   - text: "Viel Erfolg im Training!"
   - text: "Viel Spaß bei deinem Workout!"
   - text: "Ich wünsch dir ein erfolgreiches Workout!"
+  - text: "Viel Spaß beim Trainieren! Gib alles! 🔥" 
+  - text: "Los geht's! Hab ein tolles Workout!"
+  - text: "Zeit für's Training! Viel Spaß! 👊"
+
 
 
   utter_happy:
@@ -270,6 +300,10 @@ responses:
   - text: "Super!"
   - text: "Mega!"
   - text: "Das macht mich echt glücklich!"
+  - text: "Das ist toll!" 
+  - text: "Cool! 😎"
+  - text: "Wow, freut mich zu hören! 💪"
+
 
 
   utter_sad:
@@ -277,6 +311,9 @@ responses:
   - text: "Das ist nicht schön..."
   - text: "Schade..."
   - text: "Das ist traurig..."
+  - text: "Das ist nicht gut 😢" 
+  - text: "Ohje, tut mir leid…"
+
 
 
   utter_goodbye:
@@ -288,11 +325,18 @@ responses:
   - text: "Bis demnächst!"
   - text: "Wiedersehen!"
   - text: "Lass mich nicht zu lange warten. Servus!"
+  - text: "Wir sehen uns!" 
+  - text: "Hau rein!"
+  - text: "Bis zum nächsten Mal!"
+
 
 
   utter_iamabot:
   - text: "Ich bin KänGuru und bin da, um dir bei deinem Training zu helfen."
   - text: "Ich bin ein KänGuru-Chatbot powered by Rasa."
+  - text: "Mein Name ist KänGuru. Ich bin ein Chatbot, der dich bei deinem Training unterstützt." 
+  - text: "Ich bin KänGuru, ein Chatbot rund ums Thema Fitness."
+
 
   utter_greet_ask_name:
   - text: "Hallo, wie heißt Du?"

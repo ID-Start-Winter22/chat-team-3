@@ -34,7 +34,6 @@ nlu:
     - guter Tipp
     - cooles Training
     - wow
-    - nice
     - danke für die Hilfe
 
 
@@ -58,6 +57,18 @@ nlu:
     - Hallöchen
     - Na du?
     - Moinsen
+    - hello
+    - wie geht's?
+    - Was geht?
+    - was geht ab?
+    - wie geht's, wie steht's?
+    - Na?
+    - Howdy
+    - Yo
+    - Hai
+    - Ola
+    - Ciao
+    - Grüß dich
 
 - intent: greet_formal
   examples: |
@@ -68,6 +79,8 @@ nlu:
     - Grüße Sie
     - Abend
     - Mahlzeit
+    - Seien Sie gegrüßt
+
 
 
 - intent: goodbye
@@ -87,6 +100,16 @@ nlu:
     - tschau
     - wiedersehen
     - machen Sie es gut
+    - auf Wiedersehen
+    - Hau rein
+    - Servus
+    - Bis bald
+    - schönen Abend
+    - bis zum nächsten Mal
+    - ich bin raus
+    - schönen Resttag
+    - bis denne
+    - man sieht sich
 
 
 - intent: affirm
@@ -110,6 +133,12 @@ nlu:
     - ok
     - ahja
     - stimmt
+    - hast recht
+    - du hast Recht
+    - da stimme ich dir zu
+    - richtig
+    - true
+
 
 
 - intent: deny
@@ -135,6 +164,14 @@ nlu:
     - sicher nicht
     - na
     - unter keinen Umständen
+    - oh nein
+    - kannst du vergessen
+    - nö
+    - nope
+    - das mache ich nicht
+    - definitiv nicht
+    - eigentlich nicht
+    - eher nicht
 
 
 - intent: mood_great
@@ -157,6 +194,10 @@ nlu:
     - hammer
     - top
     - spitze
+    - hervorragend
+    - nice
+    - bin gut drauf
+    - mir könnte es nicht besser gehen
 
 
 - intent: mood_unhappy
@@ -178,6 +219,18 @@ nlu:
     - traurig
     - niedergeschlagen
     - unzufrieden
+    - heute war kein guter Tag
+    - meine Laune ist im Keller
+    - ich bin deprimiert
+    - deprimiert
+    - ich bin verzweifelt
+    - verzweifelt
+    - ich hatte einen schlimmen Tag
+    - scheiße
+    - beschissen
+    - mir geht's nicht so gut
+    - mein Leben ist wie zerstört
+    - Kacke
 
 
 - intent: bot_challenge
@@ -190,6 +243,9 @@ nlu:
     - bist du ein Junge oder ein Mädchen?
     - bist du Mann oder Frau?
     - was ist dein Geschlecht?
+    - bist du ein Roboter?
+    - bist du eine Maschine?
+    - Was bist du?
 
 - intent: my_name_is
   examples: |
@@ -234,8 +290,52 @@ nlu:
     - will heute Sport treiben
     - möchte Sport machen
     - Ich bin richtig motiviert zu trainieren
-    - Los gehts
     - Heute ziehen wir durch 
+    - ich hab Bock Sport zu machen
+    - ich will etwas für meinen Körper tun
+    - ich will fitter werden
+    - lass uns trainieren
+    - lass uns Sport machen
+    - trainieren
+
+- intent: what_can_you_do
+  examples: |
+    - starten
+    - Start
+    - lass uns starten
+    - Was kannst du eigentlich?
+    - Was kannst du?
+    - Was sind deine Stärken?
+    - Welche Skills hast du?
+    - Welche Kenntnisse hast du?
+    - Welche Kenntnisse besitzt du?
+    - Welche Funktionen hast du?
+    - Welche Features hast du?
+    - Was sind deine Features?
+    - Was sind deine Funktionen?
+    - Was hast du anzubieten?
+    - Wobei kannst du mir helfen?
+    - Kannst du mir helfen?
+    - Ich brauche deine Hilfe.
+    - Kannst du helfen?
+    - Need some help
+    - Hilf mir
+    - Hilfe
+    - Hilfe bitte
+    - Ich brauche einen Tipp
+    - Hilf mir bitte
+    - Help please
+    - Würdest du mir helfen?
+    - Ich brauche einen Ratschlag von dir
+    - Gibst du mir einen Tipp?
+    - Hast du einen Rat für mich
+    - Bitte ich brauch eine Lösung
+    - Problem
+    - ich habe ein Problem
+    - ich brauche Unterstützung
+    - kannst du mich unterstützen?
+
+
 
 
 - intent: had_training
@@ -252,6 +352,10 @@ nlu:
     - Training ist abgehakt für heute
     - hab heut schon Morgensport gemacht
     - Mein workout ist schon erledigt
+    - ich bin fertig für heute
+    - ich habe alles gegeben
+    - ich war schon pumpen
+    - ich habe mein Workout für heute erledigt
 
 - intent: ask_exercise_bauch
   examples: |
@@ -636,24 +740,6 @@ nlu:
     - Handgelenke stärken
     - Handgelenke trainieren
 
-
-- intent: need_help
-  examples: |
-    - Ich brauche deine Hilfe.
-    - Kannst du helfen?
-    - Need some help
-    - Hilf mir
-    - Hilfe
-    - Hilfe bitte
-    - Ich brauche einen Tipp
-    - Hilf mir bitte
-    - Help please
-    - Würdest du mir helfen?
-    - Ich brauche einen Ratschlag von dir
-    - Gibst du mir einen Tipp?
-    - Hast du einen Rat für mich
-    - Bitte ich brauch eine Lösung
-    - Problem 
 
 - intent: lazy_today
   examples: |
