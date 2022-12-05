@@ -117,7 +117,6 @@ nlu:
     - machen Sie es gut
     - auf Wiedersehen
     - Hau rein
-    - Servus
     - Bis bald
     - schönen Abend
     - bis zum nächsten Mal
@@ -192,6 +191,8 @@ nlu:
   examples: |
     - perfekt
     - super
+    - alles gut
+    - alles klar
     - wunderbar
     - toll
     - fühle mich wie ein König

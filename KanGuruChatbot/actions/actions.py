@@ -124,6 +124,15 @@ video_for_you = ["Hier ist ein Videotraining für {}.", "Hier ist ein Workout f�
                  "Starke {}muskeln sind wichtig! Los geht's!", "Hier ein paar einfache Übungen! Das schaffst du!", "Hier ist ein {}-Workout für dich! 🙌🏼",
                  "Gute Wahl 👍🏻 {}muskeln sind sehr wichtig für deinen Körper! 😇", "Ich habe ein Video für dich 🤓🏋🏽"]
 
+have_nice_training = ["Viel Spaß im Training! 🤟🏻🤩", "Viel Kraft im Training! 🔥💪🏻", "Genieß das Training!", "Viel Erfolg! 👏🏻🤩",
+                      "Viel Erfolg im Training!", "Viel Spaß bei deinem Workout!", "Ich wünsch dir ein erfolgreiches Workout! 😎✊🏻",
+                      "Viel Spaß beim Trainieren! Gib alles! 🔥", "Los geht's! Hab ein tolles Workout! 🏋🏽💪🏻",
+                      "Zeit für's Training! Viel Spaß! 👊", "Your only limit is your mind, los geht's! 🚀",
+                      "Wenn Du alles gibst, kannst Du Dir nichts vorwerfen! 🔥💪🏻", "Viel Spaß mit den Übungen! 🏋🏽🔥",
+                      "Los geht's Sportler! No excuses! 🚀💪🏻", "Zeit, aktiv zu werden. Los geht's! 😎✊🏻", "Du schaffst das! 💪🏻🔥"]
+
+one_more_video = ["Kein Problem. Hier ist noch ein Video für dich!"]
+last_video = ["Mein letzter Vorschlag 😏💪🏻"]
 
 class ActionTrainingsVideos(Action):
     def name(self) -> Text:
@@ -142,6 +151,7 @@ class ActionTrainingsVideos(Action):
                         (random.choice(video_for_you)).format(muskelgruppe_detected))
                     dispatcher.utter_message(
                         attachment={"type": "video", "payload": {"src": link}})
+                    dispatcher.utter_message(random.choice(have_nice_training))
         return []
 
 
@@ -159,9 +169,10 @@ class ActionTrainingsVideos1(Action):
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][1]
                     dispatcher.utter_message(
-                        (random.choice(video_for_you)).format(muskelgruppe_detected))
+                        (random.choice(one_more_video)).format(muskelgruppe_detected))
                     dispatcher.utter_message(
                         attachment={"type": "video", "payload": {"src": link}})
+                    dispatcher.utter_message(random.choice(have_nice_training))
         return []
 
 
@@ -179,7 +190,8 @@ class ActionTrainingsVideos2(Action):
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][2]
                     dispatcher.utter_message(
-                        (random.choice(video_for_you)).format(muskelgruppe_detected))
+                        (random.choice(last_video)).format(muskelgruppe_detected))
                     dispatcher.utter_message(
                         attachment={"type": "video", "payload": {"src": link}})
+                    dispatcher.utter_message(random.choice(have_nice_training))
         return []

@@ -1,13 +1,15 @@
 version: "3.0"
 
 stories:
-- story: happy path
+- story: hello path
   steps:
   - intent: greet
   - action: utter_greet
+
+- story: user is happy
+  steps:
   - intent: mood_great
   - action: utter_happy
-
 
 - story: sad path
   steps:
@@ -52,13 +54,13 @@ stories:
   steps:
   - intent: ask_exercise_muskelgruppe
   - action: action_give_video0
-  - action: utter_have_good_training
+
+- story: one more video exercise
+  steps:
   - intent: one_more_video
   - action: action_give_video1
-  - action: utter_have_good_training
   - intent: one_more_video
   - action: action_give_video2
-  - action: utter_have_good_training
   - intent: one_more_video
   - action: utter_no_videos_left
 
@@ -66,21 +68,18 @@ stories:
   steps:
   - intent: ask_exercise_muskelgruppe
   - action: action_give_video0
-  - action: utter_have_good_training
   - or:
     - intent: deny
     - intent: mood_unhappy
   - action: utter_one_more_video
   - or:
-    - intent: deny
-    - intent: mood_unhappy
+    - intent: affirm
+    - intent: mood_great
   - action: action_give_video1
-  - action: utter_have_good_training
   - or:
     - intent: deny
     - intent: mood_unhappy
   - action: action_give_video2
-  - action: utter_have_good_training
   - or:
     - intent: deny
     - intent: mood_unhappy

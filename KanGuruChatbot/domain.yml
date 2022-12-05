@@ -47,33 +47,13 @@ slots:
 
 
 responses:
-
-  utter_have_good_training:
-  - text: "Viel Spaß im Training! 🤟🏻🤩"
-  - text: "Viel Kraft im Training! 🔥💪🏻"
-  - text: "Genieß das Training!"
-  - text: "Viel Erfolg! 👏🏻🤩"
-  - text: "Viel Erfolg im Training!"
-  - text: "Viel Spaß bei deinem Workout!"
-  - text: "Ich wünsch dir ein erfolgreiches Workout! 😎✊🏻"
-  - text: "Viel Spaß beim Trainieren! Gib alles! 🔥" 
-  - text: "Los geht's! Hab ein tolles Workout! 🏋🏽💪🏻"
-  - text: "Zeit für's Training! Viel Spaß! 👊"
-  - text: "Your only limit is your mind, los geht's! 🚀"
-  - text: "Wenn Du alles gibst, kannst Du Dir nichts vorwerfen! 🔥💪🏻"
-  - text: "Viel Spaß mit den Übungen! 🏋🏽🔥"
-  - text: "Los geht's Sportler! No excuses! 🚀💪🏻"
-  - text: "Zeit, aktiv zu werden. Los geht's! 😎✊🏻"
-  - text: "Du schaffst das! 💪🏻🔥"
-
-
   utter_one_more_video:
   - text: "Soll ich dir ein anderes Video schicken?"
 
 
   utter_no_videos_left:
-  - text: "Sorry, ich habe leider keine anderen Videos mehr 😌 Ich werde aber ständig weiterentwickelt und bekomme bald viele neue Videos. Versprochen 👌🏻"
-
+  - text: "Sorry, leider habe ich zu dieser Muskelgruppe keine anderen Videos mehr 😌 Ich werde aber ständig weiterentwickelt und bekomme bald viele neue Videos. Versprochen 👌🏻🤩🥳"
+  - text: “Das war leider das letzte Video, das ich zu dieser Muskelgruppe habe 😌”
 
   utter_what_exactly_train:
   - text: "Was genau willst du denn heute trainieren?"
