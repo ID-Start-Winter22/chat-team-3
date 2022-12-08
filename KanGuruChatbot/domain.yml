@@ -53,7 +53,7 @@ responses:
 
   utter_no_videos_left:
   - text: "Sorry, leider habe ich zu dieser Muskelgruppe keine anderen Videos mehr 😌 Ich werde aber ständig weiterentwickelt und bekomme bald viele neue Videos. Versprochen 👌🏻🤩🥳"
-  - text: “Das war leider das letzte Video, das ich zu dieser Muskelgruppe habe 😌”
+  - text: "Das war leider das letzte Video, das ich zu dieser Muskelgruppe habe 😌"
 
   utter_what_exactly_train:
   - text: "Was genau willst du denn heute trainieren?"

@@ -13,7 +13,7 @@ body {
   height: 500px;
   bottom: 4%;
   position: fixed;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 5px 0 #00000096;
 }
@@ -57,9 +57,9 @@ div.chats::-webkit-scrollbar {
 }
 
 .botAvatar {
-  border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
+  border-radius: 70%;
+  width: 2em;
+  height: 2em;
   float: left;
   margin-left: 5px;
   /* border: 2px solid  #060DCF ; */
@@ -146,8 +146,8 @@ blockquote {
   animation: animateElement linear 0.3s;
   animation-iteration-count: 1;
   border-radius: 50%;
-  width: 1.5em;
-  height: 1.5em;
+  width: 2em;
+  height: 2em;
   float: right;
   margin-right: 5px;
   /* border: 2px solid  #060DCF ; */
@@ -191,13 +191,13 @@ blockquote {
 .imgProfile {
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
   border-radius: 50px;
-  width: 60%;
+  width: 80%;
 }
 
 .profile_div {
   /* display: none; */
   position: fixed;
-  padding: 10px;
+  padding: 15px;
   width: 10%;
   bottom: 0;
   right: 0;
