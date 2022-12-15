@@ -52,6 +52,15 @@ nlu:
     - anders
     - anderes Video bitte
 
+- intent: chatbot_family
+  examples: |
+    - Hast du eine Familie?
+    - Bist du verheiratet
+    - Hast du eine Freundin?
+    - Hast du einen Freund?
+    - Hast du ein Date?
+    - Bist du Single?
+    - Bist du ledig?
 
 - intent: greet
   examples: |
@@ -380,6 +389,45 @@ nlu:
     - KB heute
     - keine Lust auf das Training
 
+- intent: chatbot_age
+  examples: |
+    - Wie alt bist du?
+    - Dein Alter
+    - Sag mir, wie alt du bist
+    - will dein Alter wissen
+    - Bist du alt?
+    - Alter
+    - alt
+
+- intent: chatbot_city
+  examples: |
+    - Woher kommst du?
+    - Wo wohnst du?
+    - Wo lebst du?
+    - Was ist deine Heimatstadt?
+    - Wohnst du hier?
+    - In welcher Stadt wohnst du?
+    - Deine Stadt?
+    - City?
+    - city
+    - stadt
+    - deine Herkunft
+
+- intent: chatbot_work
+  examples: |
+    - Arbeitest du?
+    - Was bist du von Beruf?
+    - Dein Beruf?
+    - Beruf?
+    - Hast du einen Job?
+    - Was ist dein Job?
+    - Bist du angestellt?
+    - Was machst du beruflich?
+    - Woher hast du Geld?
+    - Wer zahlt dir?
+    - Bist du ein Businessmann?
+    - Bist du selbstständig?
+    - Was ist deine Arbeit?
 
 - intent: ask_exercise_muskelgruppe
   examples: |
@@ -787,6 +835,10 @@ nlu:
     - [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenke"} stärken
     - [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenke"} trainieren
     - [Kardio]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - [Kardiotraining]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - [Cardiotraining]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - [kardio]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - [cardio]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
     - [Cardio]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
     - Ich möchte heute [Kardiotraining]{"entity": "muskelgruppe", "value": "Kardiotraining"} machen 
     - Ich brauche Übungen für [Cardiotraining]{"entity": "muskelgruppe", "value": "Kardiotraining"} 

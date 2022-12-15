@@ -6,6 +6,26 @@ stories:
   - intent: greet
   - action: utter_greet
 
+- story: chatbot_age_question
+  steps:
+  - intent: chatbot_age
+  - action: utter_chatbot_age
+
+- story: chatbot_work_question
+  steps:
+  - intent: chatbot_work
+  - action: utter_chatbot_work
+
+- story: chatbot_family_question
+  steps:
+  - intent: chatbot_family
+  - action: utter_chatbot_family
+
+- story: chatbot_city_question
+  steps:
+  - intent: chatbot_city
+  - action: utter_chatbot_city
+
 - story: user is happy
   steps:
   - intent: mood_great

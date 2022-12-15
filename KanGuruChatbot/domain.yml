@@ -18,6 +18,10 @@ intents:
   - had_training
   - thanks
   - what_can_you_do
+  - chatbot_age
+  - chatbot_work
+  - chatbot_city
+  - chatbot_family
 
 actions:
   - action_store_name
@@ -67,6 +71,8 @@ responses:
   - text: "Welche Muskeln trainieren wir heute?"
   - text: "Was möchtest du trainieren?"
 
+  utter_chatbot_work:
+  - text: "Ich arbeite Vollzeit in einem Gym in München und unterstütze fleißige Sportler hier im Chat 🏋🏼🤙🏻"
 
   utter_ask_want_to_train:
   - text: "Hast du heute Lust auf ein Training?"
@@ -91,6 +97,8 @@ responses:
   - text: "Brauchst du Unterstützung?" 
   - text: "Kann ich dir behilflich sein?"
 
+  utter_chatbot_family:
+  - text: "Ich bin Single 💗"
 
   utter_praise:
   - text: "Duu fleißig! 😎"
@@ -177,6 +185,9 @@ responses:
   - text: "Cool! 😎"
   - text: "Wow, freut mich zu hören! 💪"
 
+  utter_chatbot_city:
+  - text: "Ich komme aus München 😉"
+  - text: "München ist meine Heimatstadt 🖤"
 
   utter_sad:
   - text: "Das tut mir leid..."
@@ -200,6 +211,8 @@ responses:
   - text: "Hau rein!"
   - text: "Bis zum nächsten Mal!"
 
+  utter_chatbot_age:
+  - text: "Ich bin 28 Jahre alt 💪🏻🦘"
 
   utter_iamabot:
   - text: "Ich bin KänGuru und bin da, um dir bei deinem Training zu helfen."

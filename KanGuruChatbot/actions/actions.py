@@ -108,7 +108,7 @@ video_trainings = {"Po": ["https://www.youtube.com/embed/bggX6ocjojk",
                              "https://www.youtube.com/embed/fx3eTJ_D95M"],
                    "Handgelenke": ["https://www.youtube.com/embed/KEY9D-PDWXc",
                                    "https://www.youtube.com/embed/XZ-0BRG1OiM",
-                                   "https://www.youtube.com/embed/1BO8Sgx0pBY"]
+                                   "https://www.youtube.com/embed/1BO8Sgx0pBY"],
                    "Kardiotraining": ["https://www.youtube.com/embed/O9jWAf98-rU",
                                       "https://www.youtube.com/embed/ympgQ2GWWcY",
                                       "https://www.youtube.com/embed/BMAvdnzuF9E"]
@@ -127,6 +127,11 @@ video_for_you = ["Hier ist ein Videotraining für {}.", "Hier ist ein Workout f�
                  "Starke {}muskeln sind wichtig! Los geht's!", "Hier ein paar einfache Übungen! Das schaffst du!", "Hier ist ein {}-Workout für dich! 🙌🏼",
                  "Gute Wahl 👍🏻 {}muskeln sind sehr wichtig für deinen Körper! 😇", "Ich habe ein Video für dich 🤓🏋🏽"]
 
+video_cardio_for_you = ["Hier ist ein Kardiotraining für dich 🤩"]
+video_stretching_for_you = ["Hier ist ein Stretching-Workout für dich! 🥰", "Hier ist ein Video für dich, entspann dich gut 🙏🏻"]
+video_yoga_for_you = ["Hier ist ein Yoga-Training für dich 🧘🏻‍♀️"]
+video_aufwaermen_for_you = ["Wärme dich gut auf! 🤸🏻"]
+
 have_nice_training = ["Viel Spaß im Training! 🤟🏻🤩", "Viel Kraft im Training! 🔥💪🏻", "Genieß das Training!", "Viel Erfolg! 👏🏻🤩",
                       "Viel Erfolg im Training!", "Viel Spaß bei deinem Workout!", "Ich wünsch dir ein erfolgreiches Workout! 😎✊🏻",
                       "Viel Spaß beim Trainieren! Gib alles! 🔥", "Los geht's! Hab ein tolles Workout! 🏋🏽💪🏻",
@@ -134,8 +139,10 @@ have_nice_training = ["Viel Spaß im Training! 🤟🏻🤩", "Viel Kraft im Tra
                       "Wenn Du alles gibst, kannst Du Dir nichts vorwerfen! 🔥💪🏻", "Viel Spaß mit den Übungen! 🏋🏽🔥",
                       "Los geht's Sportler! No excuses! 🚀💪🏻", "Zeit, aktiv zu werden. Los geht's! 😎✊🏻", "Du schaffst das! 💪🏻🔥"]
 
-one_more_video = ["Kein Problem. Hier ist noch ein Video für dich!", "Hier hab ich ein anderes Video für dich!", "Das wäre ein alternatives Video!", "Kein Problem, dieses Video hätte ich auch noch!"]
-last_video = ["Mein letzter Vorschlag 😏💪🏻", "Das waren alle Videos, die ich heute für diese Muskelgruppe habe 😏", "Das Beste kommt zum Schluss 🏋🏽🔥"]
+one_more_video = ["Kein Problem. Hier ist noch ein Video für dich!", "Hier hab ich ein anderes Video für dich!",
+                  "Das wäre ein alternatives Video!", "Kein Problem, dieses Video hätte ich auch noch!"]
+last_video = ["Mein letzter Vorschlag 😏💪🏻", "Das Beste kommt zum Schluss 🏋🏽🔥"]
+
 
 class ActionTrainingsVideos(Action):
     def name(self) -> Text:
@@ -150,10 +157,17 @@ class ActionTrainingsVideos(Action):
             for key in video_trainings:
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][0]
-                    dispatcher.utter_message(
-                        (random.choice(video_for_you)).format(muskelgruppe_detected))
-                    dispatcher.utter_message(
-                        attachment={"type": "video", "payload": {"src": link}})
+                    if muskelgruppe_detected == "Stretching":
+                        dispatcher.utter_message((random.choice(video_stretching_for_you)))
+                    elif muskelgruppe_detected == "Kardiotraining":
+                        dispatcher.utter_message((random.choice(video_cardio_for_you)))
+                    elif muskelgruppe_detected == "Yoga":
+                        dispatcher.utter_message((random.choice(video_yoga_for_you)))
+                    elif muskelgruppe_detected == "Aufwärmen":
+                        dispatcher.utter_message((random.choice(video_aufwaermen_for_you)))
+                    else:
+                        dispatcher.utter_message((random.choice(video_for_you)).format(muskelgruppe_detected))
+                    dispatcher.utter_message(attachment={"type": "video", "payload": {"src": link}})
                     dispatcher.utter_message(random.choice(have_nice_training))
         return []
 
@@ -171,10 +185,8 @@ class ActionTrainingsVideos1(Action):
             for key in video_trainings:
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][1]
-                    dispatcher.utter_message(
-                        (random.choice(one_more_video)).format(muskelgruppe_detected))
-                    dispatcher.utter_message(
-                        attachment={"type": "video", "payload": {"src": link}})
+                    dispatcher.utter_message(random.choice(one_more_video))
+                    dispatcher.utter_message(attachment={"type": "video", "payload": {"src": link}})
                     dispatcher.utter_message(random.choice(have_nice_training))
         return []
 
@@ -192,9 +204,7 @@ class ActionTrainingsVideos2(Action):
             for key in video_trainings:
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][2]
-                    dispatcher.utter_message(
-                        (random.choice(last_video)).format(muskelgruppe_detected))
-                    dispatcher.utter_message(
-                        attachment={"type": "video", "payload": {"src": link}})
+                    dispatcher.utter_message(random.choice(last_video))
+                    dispatcher.utter_message(attachment={"type": "video", "payload": {"src": link}})
                     dispatcher.utter_message(random.choice(have_nice_training))
         return []
