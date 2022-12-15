@@ -109,6 +109,9 @@ video_trainings = {"Po": ["https://www.youtube.com/embed/bggX6ocjojk",
                    "Handgelenke": ["https://www.youtube.com/embed/KEY9D-PDWXc",
                                    "https://www.youtube.com/embed/XZ-0BRG1OiM",
                                    "https://www.youtube.com/embed/1BO8Sgx0pBY"]
+                   "Kardiotraining": ["https://www.youtube.com/embed/O9jWAf98-rU",
+                                      "https://www.youtube.com/embed/ympgQ2GWWcY",
+                                      "https://www.youtube.com/embed/BMAvdnzuF9E"]
                    }
 
 video_for_you = ["Hier ist ein Videotraining für {}.", "Hier ist ein Workout für {}.",
@@ -131,8 +134,8 @@ have_nice_training = ["Viel Spaß im Training! 🤟🏻🤩", "Viel Kraft im Tra
                       "Wenn Du alles gibst, kannst Du Dir nichts vorwerfen! 🔥💪🏻", "Viel Spaß mit den Übungen! 🏋🏽🔥",
                       "Los geht's Sportler! No excuses! 🚀💪🏻", "Zeit, aktiv zu werden. Los geht's! 😎✊🏻", "Du schaffst das! 💪🏻🔥"]
 
-one_more_video = ["Kein Problem. Hier ist noch ein Video für dich!"]
-last_video = ["Mein letzter Vorschlag 😏💪🏻"]
+one_more_video = ["Kein Problem. Hier ist noch ein Video für dich!", "Hier hab ich ein anderes Video für dich!", "Das wäre ein alternatives Video!", "Kein Problem, dieses Video hätte ich auch noch!"]
+last_video = ["Mein letzter Vorschlag 😏💪🏻", "Das waren alle Videos, die ich heute für diese Muskelgruppe habe 😏", "Das Beste kommt zum Schluss 🏋🏽🔥"]
 
 class ActionTrainingsVideos(Action):
     def name(self) -> Text:

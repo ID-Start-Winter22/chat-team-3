@@ -786,3 +786,11 @@ nlu:
     - Wie sieht es mit [Handgelenken]{"entity": "muskelgruppe", "value": "Handgelenke"} aus?
     - [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenke"} stärken
     - [Handgelenke]{"entity": "muskelgruppe", "value": "Handgelenke"} trainieren
+    - [Kardio]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - [Cardio]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - Ich möchte heute [Kardiotraining]{"entity": "muskelgruppe", "value": "Kardiotraining"} machen 
+    - Ich brauche Übungen für [Cardiotraining]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - Ich will heute meine [Ausdauer]{"entity": "muskelgruppe", "value": "Kardiotraining"} trainieren
+    - Zeig mir bitte ein Video für meine [Ausdauer]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
+    - Ich möchte mehr [Ausdauer]{"entity": "muskelgruppe", "value": "Kardiotraining"} haben
+    - Wie kann ich meine [Ausdauer]{"entity": "muskelgruppe", "value": "Kardiotraining"} verbessern?
