@@ -14,8 +14,9 @@ KänGuru ist dein persönlicher Begleiter im Fitnessstudio und Zuhause. Er unter
 <h2 align="center">
 Unser Team
 </h2>
+
 | Teammitglied      | E-Mail                    |
-|     :---:         |          :---:            |
+|     :---:         |           :---:           |
 | Mariia Verbovets  | maria.verbovets@gmail.com |
 | Katharina Breunig | breunigkathi@gmail.com    |
 | Johanna Fischer   | fischer_johanna@gmx.de    |
