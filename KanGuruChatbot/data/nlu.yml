@@ -846,3 +846,17 @@ nlu:
     - Zeig mir bitte ein Video für meine [Ausdauer]{"entity": "muskelgruppe", "value": "Kardiotraining"} 
     - Ich möchte mehr [Ausdauer]{"entity": "muskelgruppe", "value": "Kardiotraining"} haben
     - Wie kann ich meine [Ausdauer]{"entity": "muskelgruppe", "value": "Kardiotraining"} verbessern?
+    - [Aufwärmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [aufwärmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [Aufwärmtraining]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [Aufwärmübungen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [Warm Up]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [warm up]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [Warmup]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [warmup]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - Ich möchte mich [aufwärmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - Ich brauche ein [Warm Up]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - Zuerst will ich mich [aufwärmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - Wie kann ich mich [aufwärmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}?
+    - Gib mir bitte [Aufwärmübungen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - Hast du ein gutes [Aufwärmtraining]{"entity": "muskelgruppe", "value": "Aufwärmen"} für mich?

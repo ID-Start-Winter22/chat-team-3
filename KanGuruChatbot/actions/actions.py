@@ -111,7 +111,10 @@ video_trainings = {"Po": ["https://www.youtube.com/embed/bggX6ocjojk",
                                    "https://www.youtube.com/embed/1BO8Sgx0pBY"],
                    "Kardiotraining": ["https://www.youtube.com/embed/O9jWAf98-rU",
                                       "https://www.youtube.com/embed/ympgQ2GWWcY",
-                                      "https://www.youtube.com/embed/BMAvdnzuF9E"]
+                                      "https://www.youtube.com/embed/BMAvdnzuF9E"],
+                   "Aufwärmen": ["https://www.youtube.com/embed/kic4EeXOfNw",
+                                 "https://www.youtube.com/embed/rVXMObcJTK8",
+                                 "https://www.youtube.com/embed/p-v_obY-lYw"]
                    }
 
 video_for_you = ["Hier ist ein Videotraining für {}.", "Hier ist ein Workout für {}.",
@@ -128,9 +131,11 @@ video_for_you = ["Hier ist ein Videotraining für {}.", "Hier ist ein Workout f�
                  "Gute Wahl 👍🏻 {}muskeln sind sehr wichtig für deinen Körper! 😇", "Ich habe ein Video für dich 🤓🏋🏽"]
 
 video_cardio_for_you = ["Hier ist ein Kardiotraining für dich 🤩"]
-video_stretching_for_you = ["Hier ist ein Stretching-Workout für dich! 🥰", "Hier ist ein Video für dich, entspann dich gut 🙏🏻"]
+video_stretching_for_you = ["Hier ist ein Stretching-Workout für dich! 🥰",
+                            "Hier ist ein Video für dich, entspann dich gut 🙏🏻"]
 video_yoga_for_you = ["Hier ist ein Yoga-Training für dich 🧘🏻‍♀️"]
-video_aufwaermen_for_you = ["Wärme dich gut auf! 🤸🏻"]
+video_aufwaermen_for_you = ["Wärme dich gut auf! 🤸🏻", "Hier habe ich ein tolles Warm Up für dich! 🏋🏽🔥",
+                            "Nach diesen Aufwärmübungen bist du bereit für dein Workout! 🚀"]
 
 have_nice_training = ["Viel Spaß im Training! 🤟🏻🤩", "Viel Kraft im Training! 🔥💪🏻", "Genieß das Training!", "Viel Erfolg! 👏🏻🤩",
                       "Viel Erfolg im Training!", "Viel Spaß bei deinem Workout!", "Ich wünsch dir ein erfolgreiches Workout! 😎✊🏻",
@@ -158,16 +163,22 @@ class ActionTrainingsVideos(Action):
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][0]
                     if muskelgruppe_detected == "Stretching":
-                        dispatcher.utter_message((random.choice(video_stretching_for_you)))
+                        dispatcher.utter_message(
+                            (random.choice(video_stretching_for_you)))
                     elif muskelgruppe_detected == "Kardiotraining":
-                        dispatcher.utter_message((random.choice(video_cardio_for_you)))
+                        dispatcher.utter_message(
+                            (random.choice(video_cardio_for_you)))
                     elif muskelgruppe_detected == "Yoga":
-                        dispatcher.utter_message((random.choice(video_yoga_for_you)))
+                        dispatcher.utter_message(
+                            (random.choice(video_yoga_for_you)))
                     elif muskelgruppe_detected == "Aufwärmen":
-                        dispatcher.utter_message((random.choice(video_aufwaermen_for_you)))
+                        dispatcher.utter_message(
+                            (random.choice(video_aufwaermen_for_you)))
                     else:
-                        dispatcher.utter_message((random.choice(video_for_you)).format(muskelgruppe_detected))
-                    dispatcher.utter_message(attachment={"type": "video", "payload": {"src": link}})
+                        dispatcher.utter_message(
+                            (random.choice(video_for_you)).format(muskelgruppe_detected))
+                    dispatcher.utter_message(
+                        attachment={"type": "video", "payload": {"src": link}})
                     dispatcher.utter_message(random.choice(have_nice_training))
         return []
 
@@ -186,7 +197,8 @@ class ActionTrainingsVideos1(Action):
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][1]
                     dispatcher.utter_message(random.choice(one_more_video))
-                    dispatcher.utter_message(attachment={"type": "video", "payload": {"src": link}})
+                    dispatcher.utter_message(
+                        attachment={"type": "video", "payload": {"src": link}})
                     dispatcher.utter_message(random.choice(have_nice_training))
         return []
 
@@ -205,6 +217,7 @@ class ActionTrainingsVideos2(Action):
                 if key == muskelgruppe_detected:
                     link = video_trainings[muskelgruppe_detected][2]
                     dispatcher.utter_message(random.choice(last_video))
-                    dispatcher.utter_message(attachment={"type": "video", "payload": {"src": link}})
+                    dispatcher.utter_message(
+                        attachment={"type": "video", "payload": {"src": link}})
                     dispatcher.utter_message(random.choice(have_nice_training))
         return []
