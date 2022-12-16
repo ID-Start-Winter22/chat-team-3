@@ -14,7 +14,6 @@ from pyparsing import nestedExpr
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-from . import mvg
 import json
 
 # NOTE(Michael): We could use this action to store the name in
