@@ -114,7 +114,10 @@ video_trainings = {"Po": ["https://www.youtube.com/embed/bggX6ocjojk",
                                       "https://www.youtube.com/embed/BMAvdnzuF9E"],
                    "Aufwärmen": ["https://www.youtube.com/embed/kic4EeXOfNw",
                                  "https://www.youtube.com/embed/rVXMObcJTK8",
-                                 "https://www.youtube.com/embed/p-v_obY-lYw"]
+                                 "https://www.youtube.com/embed/p-v_obY-lYw"],
+                   "Yoga": ["https://www.youtube.com/embed/g_tea8ZNk5A",
+                                 "https://www.youtube.com/embed/oX6I6vs1EFs",
+                                 "https://www.youtube.com/embed/7ciS93shMNQ"]
                    }
 
 video_for_you = ["Hier ist ein Videotraining für {}.", "Hier ist ein Workout für {}.",
@@ -130,10 +133,12 @@ video_for_you = ["Hier ist ein Videotraining für {}.", "Hier ist ein Workout f�
                  "Starke {}muskeln sind wichtig! Los geht's!", "Hier ein paar einfache Übungen! Das schaffst du!", "Hier ist ein {}-Workout für dich! 🙌🏼",
                  "Gute Wahl 👍🏻 {}muskeln sind sehr wichtig für deinen Körper! 😇", "Ich habe ein Video für dich 🤓🏋🏽"]
 
-video_cardio_for_you = ["Hier ist ein Kardiotraining für dich 🤩"]
+video_cardio_for_you = ["Hier ist ein Kardiotraining für dich 🤩",
+                        "Viel Spaß beim Verbessern deiner Ausdauer! 🏃🏻‍♀️", "Kardio ist wichtig. Hier mein erster Vorschlag! 🏃🏻"]
 video_stretching_for_you = ["Hier ist ein Stretching-Workout für dich! 🥰",
-                            "Hier ist ein Video für dich, entspann dich gut 🙏🏻"]
-video_yoga_for_you = ["Hier ist ein Yoga-Training für dich 🧘🏻‍♀️"]
+                            "Hier ist ein Video für dich, entspann dich gut 🙏🏻", "Hier ist mein erster Vorschlag. Verbessere deine Flexibilität! 🧘🏻"]
+video_yoga_for_you = ["Hier ist ein Yoga-Training für dich 🧘🏻‍♀️",
+                      "Hier ist mein erster Vorschlag 🧘🏻‍♀️", "Hier ist ein Video. Nimm dir Zeit für eine Entspannung! 🙏🏻"]
 video_aufwaermen_for_you = ["Wärme dich gut auf! 🤸🏻", "Hier habe ich ein tolles Warm Up für dich! 🏋🏽🔥",
                             "Nach diesen Aufwärmübungen bist du bereit für dein Workout! 🚀"]
 
@@ -146,7 +151,8 @@ have_nice_training = ["Viel Spaß im Training! 🤟🏻🤩", "Viel Kraft im Tra
 
 one_more_video = ["Kein Problem. Hier ist noch ein Video für dich!", "Hier hab ich ein anderes Video für dich!",
                   "Das wäre ein alternatives Video!", "Kein Problem, dieses Video hätte ich auch noch!"]
-last_video = ["Mein letzter Vorschlag 😏💪🏻", "Das Beste kommt zum Schluss 🏋🏽🔥"]
+last_video = ["Mein letzter Vorschlag 😏💪🏻", "Das Beste kommt zum Schluss 🏋🏽🔥",
+              "Ein Voschlag habe ich noch fûr dich 🏋🏻‍♀️💪🏻", "Alle guten Dinge sind drei ✌🏻😎"]
 
 
 class ActionTrainingsVideos(Action):

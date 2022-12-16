@@ -860,3 +860,8 @@ nlu:
     - Wie kann ich mich [aufwärmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}?
     - Gib mir bitte [Aufwärmübungen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
     - Hast du ein gutes [Aufwärmtraining]{"entity": "muskelgruppe", "value": "Aufwärmen"} für mich?
+    - [aufwarmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [aufwaermen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [aufwermen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [Aufwaermen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+    - [Aufwarmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
