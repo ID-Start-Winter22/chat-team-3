@@ -21,7 +21,21 @@ rules:
   - intent: thanks
   - action: utter_gerne
 
+- rule: activate calories form
+  steps:
+  - intent: calculate_calories
+  - action: calculate_calories_form
+  - active_loop: calculate_calories_form
 
+- rule: submit calories form
+  condition:
+  - active_loop: calculate_calories_form
+  steps:
+  - action: calculate_calories_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_calculate_calories
 
 
   

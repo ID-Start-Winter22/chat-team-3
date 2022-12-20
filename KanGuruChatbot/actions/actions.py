@@ -13,6 +13,7 @@ from pyparsing import nestedExpr
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import SlotSet
 
 import json
 
@@ -247,9 +248,10 @@ class ActionCalculateCalories(Action):
             grundumsatz = float(weight_detected) * 24 * 1.0
             grundumsatz_text = f"Dein aktueller Grundumsatz ist: {grundumsatz} kcal pro Tag!"
             dispatcher.utter_message(grundumsatz_text)
+                       
         elif gender_detected == "Frau":
             grundumsatz = float(weight_detected) * 24 * 0.9
             grundumsatz_text = f"Dein aktueller Grundumsatz ist: {grundumsatz} kcal pro Tag!"
             dispatcher.utter_message(grundumsatz_text)        
 
-        return []
+        return [SlotSet("gender", None), SlotSet("weight", None)]

@@ -67,7 +67,11 @@ slots:
     - type: from_entity
       entity: weight
     
-
+forms:
+  calculate_calories_form:
+    required_slots:
+      - gender
+      - weight
 
 responses:
   utter_one_more_video:
