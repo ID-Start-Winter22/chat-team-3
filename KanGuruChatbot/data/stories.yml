@@ -110,3 +110,13 @@ stories:
   steps:
   - intent: lazy_today
   - action: utter_motivate
+
+- story: User wants to calculate calories
+  steps:
+  - intent: calculate_calories
+  - action: utter_calories
+  - action: utter_ask_gender
+  - intent: give_gender
+  - action: utter_ask_weight
+  - intent: give_weight
+  - action: action_calculate_calories

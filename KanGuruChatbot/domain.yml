@@ -22,6 +22,9 @@ intents:
   - chatbot_work
   - chatbot_city
   - chatbot_family
+  - calculate_calories
+  - give_gender
+  - give_weight
 
 actions:
   - action_store_name
@@ -30,10 +33,13 @@ actions:
   - action_give_video0
   - action_give_video1
   - action_give_video2
+  - action_calculate_calories
 
 entities:
   - username
   - muskelgruppe
+  - gender
+  - weight
 
 slots:
   username:
@@ -48,6 +54,19 @@ slots:
     mappings:
     - type: from_entity
       entity: muskelgruppe
+  gender:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: gender
+  weight:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: weight
+    
 
 
 responses:
@@ -241,6 +260,18 @@ responses:
   - text: "Hey, {username}. Bereit deine Fitness zu verbessern?" 
   - text: "Hallo, {username}, schön dich zu sehen. 😊"
   - text: "Hallo {username}. Wie geht's, wie steht's? 😉"
+
+
+  utter_calories:
+  - text: "Um deinen Kaloriengrundumsatz auszurechnen, musst du mir dein Geschlecht und dein Körpergewicht verraten."
+
+
+  utter_ask_gender:
+  - text: "Bist du männlich oder weiblich?"
+
+
+  utter_ask_weight:
+  - text: "Was ist dein aktuelles Körpergewicht?"
 
 
 session_config:

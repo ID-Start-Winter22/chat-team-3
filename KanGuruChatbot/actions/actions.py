@@ -226,3 +226,30 @@ class ActionTrainingsVideos2(Action):
                         attachment={"type": "video", "payload": {"src": link}})
                     dispatcher.utter_message(random.choice(have_nice_training))
         return []
+
+
+#Hier wird der Grundumsatz berechnet, aktuell nur durch Körpergewicht, für genaueres Ergebnis eventuell noch nach Alter und Körpergröße fragen (Harris-Benedict-Formel)
+class ActionCalculateCalories(Action):
+    def name(self) -> Text:
+        return "action_calculate_calories"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        gender_detected = tracker.get_slot("gender")
+        grundumsatz = 0
+        if not gender_detected:
+            dispatcher.utter_message(
+                "Sorry, aber ich habe das Geschlecht nicht erkannt. Probier es nochmal bitte 🤓")
+        weight_detected = tracker.get_slot("weight")
+        if not weight_detected:
+            dispatcher.utter_message(
+                "Sorry, aber ich habe das Gewicht nicht erkannt. Probier es nochmal bitte 🤓")
+        if gender_detected == "Mann":
+            grundumsatz = float(weight_detected) * 24 * 1.0
+            grundumsatz_text = f"Dein aktueller Grundumsatz ist: {grundumsatz} kcal pro Tag!"
+            dispatcher.utter_message(grundumsatz_text)
+        elif gender_detected == "Frau":
+            grundumsatz = float(weight_detected) * 24 * 0.9
+            grundumsatz_text = f"Dein aktueller Grundumsatz ist: {grundumsatz} kcal pro Tag!"
+            dispatcher.utter_message(grundumsatz_text)        
+
+        return []

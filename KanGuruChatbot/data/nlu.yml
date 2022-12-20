@@ -865,3 +865,36 @@ nlu:
     - [aufwermen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
     - [Aufwaermen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
     - [Aufwarmen]{"entity": "muskelgruppe", "value": "Aufwärmen"}
+
+- intent: calculate_calories
+  examples: |
+    - Ich möchte meinen Grundumsatz berechnen
+    - Ich will meinen Kalorien Grundumsatz berechnen
+    - Kalorien berechnen
+    - Kaloriengrundumsatz
+    - Kalorien
+    - Grundumsatz
+    - Kannst du meinen Grundumsatz ausrechnen?
+    - Was ist mein Kaloriengrundumsatz?
+
+
+- intent: give_gender
+  examples: |
+    - [männlich]{"entity": "gender", "value": "Mann"}
+    - Ich bin ein [Mann]{"entity": "gender", "value": "Mann"}
+    - Ich bin [männlich]{"entity": "gender", "value": "Mann"}
+    - [mannlich]{"entity": "gender", "value": "Mann"}
+    - [maennlich]{"entity": "gender", "value": "Mann"}
+    - Ich bin eine [Frau]{"entity": "gender", "value": "Frau"}
+    - [weiblich]{"entity": "gender", "value": "Frau"}
+    - Ich bin [weiblich]{"entity": "gender", "value": "Frau"}
+
+- intent: give_weight
+  examples: |
+    - Ich wiege [60](weight) kg
+    - [50](weight) kg
+    - [70](weight) Kilo
+    - [80](weight) Kilogramm
+    - Mein Gewicht ist [90](weight) kg
+    - [100](weight)
+    
