@@ -69,7 +69,7 @@ slots:
         requested_slot: gender
   weight:
     type: float
-    min_value: 50.0
+    min_value: 40.0
     max_value: 250.0
     influence_conversation: true
     mappings:

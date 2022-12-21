@@ -888,3 +888,13 @@ nlu:
     - Ich bin eine [Frau]{"entity": "gender", "value": "Frau"}
     - [weiblich]{"entity": "gender", "value": "Frau"}
     - Ich bin [weiblich]{"entity": "gender", "value": "Frau"}
+    - [Frau]{"entity": "gender", "value": "Frau"}
+    - [frau]{"entity": "gender", "value": "Frau"}
+    - [Mädchen]{"entity": "gender", "value": "Frau"}
+    - [madchen]{"entity": "gender", "value": "Frau"}
+    - [maedchen]{"entity": "gender", "value": "Frau"}
+    - [1]{"entity": "gender", "value": "Mann"}
+    - [2]{"entity": "gender", "value": "Frau"}
+    - [mann]{"entity": "gender", "value": "Mann"}
+    - [Junge]{"entity": "gender", "value": "Mann"}
+    - [junge]{"entity": "gender", "value": "Mann"}
