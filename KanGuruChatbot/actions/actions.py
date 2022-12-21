@@ -229,29 +229,31 @@ class ActionTrainingsVideos2(Action):
         return []
 
 
-#Hier wird der Grundumsatz berechnet, aktuell nur durch Körpergewicht, für genaueres Ergebnis eventuell noch nach Alter und Körpergröße fragen (Harris-Benedict-Formel)
+# Hier wird der Grundumsatz berechnet:
+# Männer: RMR = (10 × Gewicht in kg) + (6,25 × Größe in cm) – (5 × Alter) + 5 
+# Frauen: RMR = (10 × Gewicht in kg) + (6,25 × Größe in cm) – (5 × Alter) – 161
+# Die benötigten Infos wie Geschlecht, Alter etc. werden durch ein form abgefragt und am Ende wieder durch SetSlot zurückgesetzt
+
 class ActionCalculateCalories(Action):
     def name(self) -> Text:
         return "action_calculate_calories"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        gender_detected = tracker.get_slot("gender")
+        
         grundumsatz = 0
-        if not gender_detected:
-            dispatcher.utter_message(
-                "Sorry, aber ich habe das Geschlecht nicht erkannt. Probier es nochmal bitte 🤓")
+        gender_detected = tracker.get_slot("gender")
         weight_detected = tracker.get_slot("weight")
-        if not weight_detected:
-            dispatcher.utter_message(
-                "Sorry, aber ich habe das Gewicht nicht erkannt. Probier es nochmal bitte 🤓")
+        height_detected = tracker.get_slot("height")
+        age_detected = tracker.get_slot("age")
+
         if gender_detected == "Mann":
-            grundumsatz = float(weight_detected) * 24 * 1.0
-            grundumsatz_text = f"Dein aktueller Grundumsatz ist: {grundumsatz} kcal pro Tag!"
+            grundumsatz = 10 * float(weight_detected) + 6.25 * float(height_detected) - 5 * float(age_detected) + 5
+            grundumsatz_text = f"Alles klar, Sportler. Dein Ergebnis ist bereit! 😎📋\nDein aktueller Grundumsatz liegt bei ca. {grundumsatz} kcal pro Tag! 🔥"
             dispatcher.utter_message(grundumsatz_text)
                        
         elif gender_detected == "Frau":
-            grundumsatz = float(weight_detected) * 24 * 0.9
-            grundumsatz_text = f"Dein aktueller Grundumsatz ist: {grundumsatz} kcal pro Tag!"
+            grundumsatz = 10 * float(weight_detected) + 6.25 * float(height_detected) - 5 * float(age_detected) - 161
+            grundumsatz_text = f"Alles klar, Sportler. Dein Ergebnis ist bereit! 😎📋\nDein aktueller Grundumsatz liegt bei ca. {grundumsatz} kcal pro Tag! 🔥"
             dispatcher.utter_message(grundumsatz_text)        
 
-        return [SlotSet("gender", None), SlotSet("weight", None)]
+        return [SlotSet("gender", None), SlotSet("weight", None), SlotSet("height", None), SlotSet("age", None)]

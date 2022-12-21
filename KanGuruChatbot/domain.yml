@@ -25,6 +25,8 @@ intents:
   - calculate_calories
   - give_gender
   - give_weight
+  - give_height
+  - give_age
 
 actions:
   - action_store_name
@@ -40,6 +42,8 @@ entities:
   - muskelgruppe
   - gender
   - weight
+  - height
+  - age
 
 slots:
   username:
@@ -60,18 +64,47 @@ slots:
     mappings:
     - type: from_entity
       entity: gender
+      conditions:  
+      - active_loop: calculate_calories_form
+        requested_slot: gender
   weight:
-    type: text
+    type: float
+    min_value: 50.0
+    max_value: 250.0
     influence_conversation: true
     mappings:
-    - type: from_entity
-      entity: weight
+    - type: from_text
+      conditions:  
+      - active_loop: calculate_calories_form
+        requested_slot: weight
+  height:
+    type: float
+    min_value: 100.0
+    max_value: 220.0
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:  
+      - active_loop: calculate_calories_form
+        requested_slot: height
+  age:
+    type: float
+    min_value: 0.0
+    max_value: 100.0
+    influence_conversation: true
+    mappings:
+    - type: from_text
+      conditions:  
+      - active_loop: calculate_calories_form
+        requested_slot: age
     
 forms:
   calculate_calories_form:
     required_slots:
       - gender
       - weight
+      - height
+      - age
 
 responses:
   utter_one_more_video:
@@ -267,16 +300,23 @@ responses:
 
 
   utter_calories:
-  - text: "Um deinen Kaloriengrundumsatz auszurechnen, musst du mir dein Geschlecht und dein Körpergewicht verraten."
+  - text: "Gerne! 😎 Um deinen Kaloriengrundumsatz auszurechnen, musst du mir zuerst ein paar Fragen beantworten 📝"
 
 
   utter_ask_gender:
-  - text: "Bist du männlich oder weiblich?"
+  - text: "Bist du männlich oder weiblich? 🤔"
 
 
   utter_ask_weight:
-  - text: "Was ist dein aktuelles Körpergewicht?"
+  - text: "Alles klar! 😊 Was ist dein aktuelles Körpergewicht in kg? 📋"
 
+
+  utter_ask_height:
+  - text: "Okay. 😉 Und was ist deine Körpergröße in cm? 📊"
+
+
+  utter_ask_age:
+  - text: "Verstehe. 😄 Letzte Frage: Wie alt bist du? 📆"
 
 session_config:
   session_expiration_time: 60

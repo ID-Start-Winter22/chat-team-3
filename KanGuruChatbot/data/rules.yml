@@ -24,6 +24,7 @@ rules:
 - rule: activate calories form
   steps:
   - intent: calculate_calories
+  - action: utter_calories
   - action: calculate_calories_form
   - active_loop: calculate_calories_form
 
